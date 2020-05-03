@@ -30,35 +30,23 @@ const Header = ({ title }) => {
             <img src={logo} alt={title} />
           </a>
           <ul>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                Home
-              </a>
+            <li>
+              <a href='#'>Home</a>
             </li>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                Menu
-              </a>
+            <li>
+              <a href='#'>Menu</a>
             </li>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                Reservations
-              </a>
+            <li>
+              <a href='#'>Reservations</a>
             </li>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                News
-              </a>
+            <li>
+              <a href='#'>News</a>
             </li>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                Shop
-              </a>
+            <li>
+              <a href='#'>Shop</a>
             </li>
-            <li className='nav-item'>
-              <a href='#' className='nav-link'>
-                Comment
-              </a>
+            <li>
+              <a href='#'>Comment</a>
             </li>
           </ul>
         </nav>

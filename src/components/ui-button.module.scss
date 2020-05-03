@@ -1,0 +1,13 @@
+.ui-button {
+  font-size: 8.5rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-font-color);
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+
+  .firstLetter {
+    text-transform: uppercase;
+    font-size: 10.3rem;
+  }
+}

@@ -2,26 +2,26 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FaAsterisk } from 'react-icons/fa'
 
+import UIHeadline from './ui-headline'
+
 import style from './hero.module.scss'
 
 const Hero = () => (
   <section className={style.hero} id='hero'>
     <div className='container'>
-      <h2 className='sub-headline'>
-        <span className='first-letter'>W</span>elcome
-      </h2>
-      <h1 className='headline'>The Rosa</h1>
-      <div className='headline-description'>
-        <div className='separator'>
-          <div className='line line-left'></div>
-          <div className='asterix'>
-            <FaAsterisk />
-          </div>
-          <div className='line line-right'></div>
+      <UIHeadline title='Welcome' />
+      <h1>The Rosa</h1>
+      <div className={style.headlineDescription}>
+        <div className={style.separator}>
+          <div className={`${style.line} ${style.lineLeft} `}></div>
+          <FaAsterisk className={style.asterisk} />
+          <div className={`${style.line} ${style.lineRight} `}></div>
         </div>
         <div className='single-animation'>
           <h5>Ready to be opened</h5>
-          <a href='#' className='btn cta-btn'></a>
+          <a href='#' className={`${style.btn} ${style.ctaBtn} `}>
+            Explore
+          </a>
         </div>
       </div>
     </div>
