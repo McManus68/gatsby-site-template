@@ -1,6 +1,7 @@
 import React from 'react'
 
 import UIHeadline from './ui-headline'
+import { FaAsterisk } from 'react-icons/fa'
 
 import image1 from '../assets/images/our-story-1.jpg'
 
@@ -9,11 +10,14 @@ import style from './discover.module.scss'
 const Discover = () => (
   <section className={style.discover} id='discover'>
     <div className='container'>
-      <div className='restaurant-info'>
-        <div className='restaurant-description padding-right animate-left'>
-          <div className='global-headline'>
-            <UIHeadline title='Discover' />
-            <h1 className='headline headline-dark'>Our Story</h1>
+      <div className={style.restautantInfo}>
+        <div
+          className={`${style.restaurantDescription} ${style.paddingRight} ${style.animateLeft}`}
+        >
+          <div className={style.globalHeadline}>
+            <UIHeadline title='Discover' className={style.headline} />
+            <h1>Our Story</h1>
+            <FaAsterisk className={style.asterisk} />
           </div>
           <p>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui

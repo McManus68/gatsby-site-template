@@ -1,4 +1,4 @@
-.ui-headline {
+.ui-headline :global {
   font-size: 8.5rem;
   font-family: var(--secondary-font);
   color: var(--secondary-font-color);
@@ -6,7 +6,7 @@
   line-height: 0.4;
   letter-spacing: 2px;
 
-  .firstLetter {
+  .first-letter {
     text-transform: uppercase;
     font-size: 10.3rem;
   }
