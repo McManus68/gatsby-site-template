@@ -1,0 +1,17 @@
+@import '../../styles/common';
+
+.discover-menu {
+  h1 {
+    color: var(--main-font-color-dark);
+  }
+
+  a {
+    margin-top: 4.2rem;
+  }
+
+  .restaurant-description {
+    @extend .restaurant-description;
+    padding-top: 3rem;
+    margin-bottom: 0;
+  }
+}

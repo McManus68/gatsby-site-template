@@ -1,0 +1,10 @@
+@import '../../styles/_variables';
+
+.tasteful-recipes {
+  background: url($image-path + 'tasteful-recipes.jpg') center no-repeat;
+  background-size: cover;
+
+  h1 {
+    color: #fff;
+  }
+}

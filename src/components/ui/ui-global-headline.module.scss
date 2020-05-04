@@ -1,0 +1,20 @@
+.ui-global-headline {
+  text-align: center;
+  margin-top: 6.9rem;
+  color: var(--main-font-color-dark);
+
+  .headline {
+    letter-spacing: -1px;
+    line-height: 0.42;
+  }
+
+  h1 {
+    letter-spacing: 0.7rem;
+    margin-right: -0.7rem;
+  }
+
+  .asterisk {
+    color: var(--body-font-color);
+    margin: 2.4rem;
+  }
+}

@@ -1,7 +1,9 @@
+@import '../../styles/_variables';
+
 .hero {
   width: 100%;
   height: 100vh;
-  background: url('../assets/images/hero.jpg') center no-repeat;
+  background: url($image-path + 'hero.jpg') center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -54,28 +56,6 @@
       margin-bottom: 1.2rem;
       letter-spacing: 3px;
       margin-right: -3px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-right: -2px;
-    }
-
-    .cta-btn {
-      font-size: 1.1rem;
-      background-color: #fff;
-      padding: 0.9rem 1.8rem;
-      color: var(--body-font-color);
-      border-radius: 0.4rem;
-      transition: background-color 0.5s;
-
-      &:focus,
-      &:hover {
-        color: #fff;
-        background-color: var(--secondary-font-color);
-      }
     }
   }
 }

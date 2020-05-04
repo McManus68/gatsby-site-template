@@ -1,0 +1,18 @@
+@import '../../styles/common';
+
+.ui-button {
+  @include btn;
+
+  font-size: 1.1rem;
+  background-color: #fff;
+  padding: 0.9rem 1.8rem;
+  color: var(--body-font-color);
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: var(--secondary-font-color);
+  }
+}

@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setNavOpen } from '../state'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link } from 'gatsby'
 
 import logo from '../assets/images/logo-rosa.png'
 import style from './header.module.scss'

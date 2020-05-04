@@ -1,0 +1,6 @@
+@import '../../styles/_variables';
+
+.perfect-blend {
+  background: url($image-path + 'perfect-blend.jpg') center no-repeat;
+  background-size: cover;
+}
