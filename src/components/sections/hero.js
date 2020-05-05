@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section className={style.hero} id='hero'>
       <div className='container'>
-        <UIHeadline title='Welcome' />
+        <UIHeadline title='Welcome' className={style.headline} />
         <h1>The Rosa</h1>
         <div className={style.headlineDescription}>
           <div className={style.separator}>
@@ -24,7 +24,7 @@ const Hero = () => {
             <FaAsterisk className={style.asterisk} />
             <div className={`${style.line} ${style.lineRight} `}></div>
           </div>
-          <div className='single-animation'>
+          <div className={style.singleAnimation}>
             <h5>Ready to be opened</h5>
             <UIButton text='Explore' onClick={goToHome} />
           </div>

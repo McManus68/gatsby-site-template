@@ -9,7 +9,7 @@ const PerfectBlend = () => (
       <UIGlobalHeadline
         title='The perfect'
         subtitle='Blend'
-        asterisk='false'
+        asterisk={false}
         animateTitleClass='animate-top'
         animateSubTitleClass='animate-bottom'
       />

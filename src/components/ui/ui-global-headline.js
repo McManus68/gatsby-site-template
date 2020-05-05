@@ -30,8 +30,8 @@ const UIGlobalHeadline = ({
 UIGlobalHeadline.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  animateTitleClass: PropTypes.object,
-  animateSubTitleClass: PropTypes.object,
+  animateTitleClass: PropTypes.string,
+  animateSubTitleClass: PropTypes.string,
   asterisk: PropTypes.bool,
 }
 

@@ -1,3 +1,5 @@
+@import '../styles/_variables';
+
 .footer {
   padding: 7.9rem 0;
   background-color: #121212;
@@ -20,6 +22,7 @@
       color: #fff;
       cursor: pointer;
       margin: 1rem;
+      animation: up 2s infinite;
     }
   }
 
@@ -101,5 +104,58 @@
         margin-left: 10.5rem;
       }
     }
+  }
+}
+
+@media screen and (min-width: $medium-device) {
+  .footer {
+    .content {
+      max-width: 77.5rem;
+      margin: auto;
+
+      .about {
+        max-width: 51.3rem;
+        margin: 0 auto 5.4rem;
+      }
+    }
+    .content-divider {
+      display: flex;
+      justify-content: space-between;
+
+      .social-media {
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 1rem;
+
+        .social-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .newsletter-container {
+      form {
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0 1rem;
+
+        button {
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1rem);
+    opacity: 0;
   }
 }

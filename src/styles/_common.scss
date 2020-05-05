@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin btn {
   display: inline-block;
   text-transform: uppercase;
@@ -26,8 +28,20 @@
   margin-bottom: 3rem;
 }
 
-.padding-right {
-}
+@media screen and (min-width: $medium-device) {
+  .restaurant-info {
+    display: flex;
+    align-items: center;
+  }
 
-.animate-left {
+  .restaurant-description {
+    margin-bottom: 3rem;
+  }
+
+  .restaurant-info > div {
+    flex: 1;
+  }
+  .padding-right {
+    padding-right: 7rem;
+  }
 }

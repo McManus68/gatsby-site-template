@@ -30,7 +30,9 @@ const Header = ({ title }) => {
           </a>
           <ul>
             <li>
-              <a href='#'>Home</a>
+              <a className={style.active} href='#'>
+                Home
+              </a>
             </li>
             <li>
               <a href='#'>Menu</a>

@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-family: var(--body-font);
   font-size: 10px;
@@ -39,6 +43,7 @@ h1 {
 
 section {
   padding: 3.9rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -59,4 +64,10 @@ p {
   max-width: 122.5rem;
   margin: 0 auto;
   padding: 0 2.4rem;
+}
+
+@media screen and (min-width: $medium-device) {
+  section {
+    padding: 7.9rem;
+  }
 }

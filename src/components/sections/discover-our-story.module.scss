@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .discover-our-story {
   p {
     line-height: 1.6;
@@ -6,5 +8,10 @@
 
   h1 {
     color: var(--main-font-color-dark);
+  }
+}
+
+@media screen and (min-width: $medium-device) {
+  .discover-our-story {
   }
 }
