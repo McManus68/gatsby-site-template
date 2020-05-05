@@ -1,18 +1,21 @@
 import React from 'react'
 
-import UIGlobalHeadline from '../ui/ui-global-headline'
+import Fade from 'react-reveal/Fade'
+
+import UIHeadline from '../ui/ui-headline'
 import style from './perfect-blend.module.scss'
 
 const PerfectBlend = () => (
   <section className={style.perfectBlend + ' between'} id='blend'>
     <div className='container'>
-      <UIGlobalHeadline
-        title='The perfect'
-        subtitle='Blend'
-        asterisk={false}
-        animateTitleClass='animate-top'
-        animateSubTitleClass='animate-bottom'
-      />
+      <div className='global-headline'>
+        <Fade bottom delay={300}>
+          <UIHeadline title='The perfect' />
+        </Fade>
+        <Fade top delay={600}>
+          <h1>Blend</h1>
+        </Fade>
+      </div>
     </div>
   </section>
 )

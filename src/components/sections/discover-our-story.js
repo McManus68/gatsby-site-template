@@ -1,9 +1,10 @@
 import React from 'react'
 
-import UIGlobalHeadline from '../ui/ui-global-headline'
+import UIHeadline from '../ui/ui-headline'
 import UILink from '../ui/ui-link'
 
 import Fade from 'react-reveal/Fade'
+import { FaAsterisk } from 'react-icons/fa'
 
 import image from '../../assets/images/our-story-1.jpg'
 
@@ -13,9 +14,13 @@ const DiscoverOurStory = () => (
   <section className={style.discoverOurStory} id='discover'>
     <div className='container'>
       <div className='restaurant-info'>
-        <Fade left>
+        <Fade left delay={300}>
           <div className='restaurant-description padding-right '>
-            <UIGlobalHeadline title='Discover' subtitle='Our Story' />
+            <div className='global-headline'>
+              <UIHeadline title='Discover' />
+              <h1>Our Story</h1>
+              <FaAsterisk className={style.asterisk} />
+            </div>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -24,7 +29,7 @@ const DiscoverOurStory = () => (
             <UILink text='About us' />
           </div>
         </Fade>
-        <Fade right>
+        <Fade right delay={600}>
           <div className='restaurant-info-img'>
             <img src={image} alt='' />
           </div>

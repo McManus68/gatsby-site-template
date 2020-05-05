@@ -1,9 +1,10 @@
 import React from 'react'
 
-import UIGlobalHeadline from '../ui/ui-global-headline'
+import UIHeadline from '../ui/ui-headline'
 import UILink from '../ui/ui-link'
 
 import Fade from 'react-reveal/Fade'
+import { FaAsterisk } from 'react-icons/fa'
 
 import img1 from '../../assets/images/delight-group-1.jpg'
 import img2 from '../../assets/images/delight-group-2.jpg'
@@ -16,7 +17,11 @@ const CulinaryDelight = () => (
       <div className='restaurant-info'>
         <Fade left>
           <div className='restaurant-description padding-right'>
-            <UIGlobalHeadline title='Culinary' subtitle='Delight' />
+            <div className='global-headline'>
+              <UIHeadline title='Culinary' />
+              <h1>Delight</h1>
+              <FaAsterisk className={style.asterisk} />
+            </div>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
