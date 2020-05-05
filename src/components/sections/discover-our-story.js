@@ -19,7 +19,7 @@ const DiscoverOurStory = () => (
             <div className='global-headline'>
               <UIHeadline title='Discover' />
               <h1>Our Story</h1>
-              <FaAsterisk className={style.asterisk} />
+              <FaAsterisk className='asterisk' />
             </div>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui

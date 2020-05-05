@@ -30,7 +30,7 @@ const DiscoverMenu = () => (
             <div className='global-headline'>
               <UIHeadline title='Discover' />
               <h1>Menu</h1>
-              <FaAsterisk className={style.asterisk} />
+              <FaAsterisk className='asterisk' />
             </div>
 
             <p>

@@ -20,7 +20,7 @@ const CulinaryDelight = () => (
             <div className='global-headline'>
               <UIHeadline title='Culinary' />
               <h1>Delight</h1>
-              <FaAsterisk className={style.asterisk} />
+              <FaAsterisk className='asterisk' />
             </div>
             <p>
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
