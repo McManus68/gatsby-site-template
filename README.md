@@ -10,7 +10,9 @@
 
 Reproduce the Rosa WP Theme using Gatsby JS.
 
-## 🚀 Quick start
+## 🚀 Demo
+
+https://template-restaurant.netlify.app/#
 
 1.  **Start developing.**
 
