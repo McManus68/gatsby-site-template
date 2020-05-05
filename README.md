@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="./src/assets/doc/doc-1.png" width="500" />
+    <img alt="Doc" src="./src/assets/doc/doc-1.png" width="500" />
   </a>
 </p>
 <h1 align="center">
@@ -25,7 +25,7 @@ Reproduce the Rosa WP Theme using Gatsby JS.
 
         Your site is now running at `http://localhost:8000`!
 
-      <a href="https://www.gatsbyjs.org">
-        <img alt="Gatsby" src="./src/assets/doc/doc-2.png" width="500" />
-      </a>
-    </p>
+
+<p align="center">
+    <img alt="Doc" src="./src/assets/doc/doc-2.png" width="500" />
+</p>
