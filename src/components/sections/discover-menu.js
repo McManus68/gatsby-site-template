@@ -4,6 +4,8 @@ import { LoremIpsum } from 'react-lorem-ipsum'
 import Section from '../ui/section'
 import Container from '../ui/container'
 import Row from '../ui/row'
+import Column from '../ui/column'
+
 import Headline from '../ui/headline'
 import ImageGroup from '../ui/image-group'
 import HeadlineSeparator from '../ui/headline-separator'
@@ -22,26 +24,29 @@ const DiscoverMenu = () => (
   <Section className={style.discoverMenu} id='menu'>
     <Container>
       <Row>
-        <Fade left delay={300}>
-          <ImageGroup className='padding-right'>
-            <img src={img1} alt='' />
-            <img src={img2} alt='' />
-            <img src={img3} alt='' />
-            <img src={img4} alt='' />
-          </ImageGroup>
-        </Fade>
-        <Fade right delay={600}>
-          <div className={style.restaurantDescription}>
-            <Headline>
-              <h2>Discover</h2>
-              <h1>Menu</h1>
-              <HeadlineSeparator />
-            </Headline>
-
-            <LoremIpsum p={1} />
-            <Link text='View the full menu' />
-          </div>
-        </Fade>
+        <Column>
+          <Fade left delay={300}>
+            <ImageGroup>
+              <img src={img1} alt='' />
+              <img src={img2} alt='' />
+              <img src={img3} alt='' />
+              <img src={img4} alt='' />
+            </ImageGroup>
+          </Fade>
+        </Column>
+        <Column>
+          <Fade right delay={600}>
+            <div className={style.restaurantDescription}>
+              <Headline>
+                <h2>Discover</h2>
+                <h1>Menu</h1>
+                <HeadlineSeparator />
+              </Headline>
+              <LoremIpsum p={1} />
+              <Link text='View the full menu' />
+            </div>
+          </Fade>
+        </Column>
       </Row>
     </Container>
   </Section>

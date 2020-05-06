@@ -4,6 +4,8 @@ import { LoremIpsum } from 'react-lorem-ipsum'
 import Section from '../ui/section'
 import Container from '../ui/container'
 import Row from '../ui/row'
+import Column from '../ui/column'
+
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
@@ -18,23 +20,27 @@ const DiscoverOurStory = () => (
   <Section className={style.discoverOurStory} id='discover'>
     <Container>
       <Row>
-        <Fade left delay={300}>
-          <div className='padding-right'>
-            <Headline>
-              <h2>Discover</h2>
-              <h1>Our Story</h1>
-              <HeadlineSeparator />
-            </Headline>
-            <LoremIpsum p={1} />
+        <Column>
+          <Fade left delay={300}>
+            <div>
+              <Headline>
+                <h2>Discover</h2>
+                <h1>Our Story</h1>
+                <HeadlineSeparator />
+              </Headline>
+              <LoremIpsum p={1} />
 
-            <Link text='About us' />
-          </div>
-        </Fade>
-        <Fade right delay={600}>
-          <div className='restaurant-info-img'>
-            <img src={image} alt='' />
-          </div>
-        </Fade>
+              <Link text='About us' />
+            </div>
+          </Fade>
+        </Column>
+        <Column>
+          <Fade right delay={600}>
+            <div>
+              <img src={image} alt='' />
+            </div>
+          </Fade>
+        </Column>
       </Row>
     </Container>
   </Section>

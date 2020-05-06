@@ -4,6 +4,8 @@ import { LoremIpsum } from 'react-lorem-ipsum'
 import Section from '../ui/section'
 import Container from '../ui/container'
 import Row from '../ui/row'
+import Column from '../ui/column'
+
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import ImageGroup from '../ui/image-group'
@@ -20,8 +22,8 @@ const CulinaryDelight = () => (
   <Section className={style.culinaryDelight} id='culinary-delight'>
     <Container>
       <Row>
-        <Fade left>
-          <div className='padding-right'>
+        <Column>
+          <Fade left>
             <Headline>
               <h2>Culinary</h2>
               <h1>Delight</h1>
@@ -29,17 +31,19 @@ const CulinaryDelight = () => (
             </Headline>
             <LoremIpsum p={1} />
             <Link text='Make a reservation' />
-          </div>
-        </Fade>
+          </Fade>
+        </Column>
 
-        <ImageGroup>
-          <Fade top>
-            <img src={img1} alt='' />
-          </Fade>
-          <Fade bottom>
-            <img src={img2} alt='' />
-          </Fade>
-        </ImageGroup>
+        <Column>
+          <ImageGroup>
+            <Fade top>
+              <img src={img1} alt='' />
+            </Fade>
+            <Fade bottom>
+              <img src={img2} alt='' />
+            </Fade>
+          </ImageGroup>
+        </Column>
       </Row>
     </Container>
   </Section>
