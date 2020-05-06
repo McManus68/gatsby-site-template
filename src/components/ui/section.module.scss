@@ -1,12 +1,4 @@
-@import '../../styles/variables';
-
 .section {
-  padding: 3.9rem 0;
+  padding: var(--section-padding);
   overflow: hidden;
-}
-
-@media screen and (min-width: $md) {
-  .section {
-    padding: 7.9rem;
-  }
 }

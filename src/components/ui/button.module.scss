@@ -4,11 +4,10 @@
   cursor: pointer;
   letter-spacing: 2px;
   margin-right: -2px;
-  font-size: 1.2rem;
   background-color: #fff;
-  padding: 0.9rem 1.8rem;
+  padding: 8px 16px;
   color: var(--body-font-color);
-  border-radius: 0.4rem;
+  border-radius: 3px;
   transition: background-color 0.5s;
 
   &:focus,

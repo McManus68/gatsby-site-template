@@ -1,14 +1,15 @@
 import React from 'react'
-import { navigate } from 'gatsby'
 import { LoremIpsum } from 'react-lorem-ipsum'
 
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+
+import Content from './ui/content'
+import BackToTop from './ui/back-to-top'
 import HeadlineSeparator from './ui/headline-separator'
 
 import Fade from 'react-reveal/Fade'
 
 import {
-  FaChevronUp,
   FaTwitter,
   FaFacebook,
   FaPinterest,
@@ -21,26 +22,26 @@ import style from './footer.module.scss'
 
 const Footer = () => {
   return (
-    <footer className={style.footer}>
+    <footer>
       <Container>
-        <div className={style.backToTop}>
-          <FaChevronUp
-            className={style.chevron}
-            onClick={() => navigate('#hero')}
-          />
-        </div>
-        <div className={style.content}>
-          <Fade top>
-            <div className={style.about}>
-              <h4>About Rosa</h4>
-              <HeadlineSeparator className={style.headlineSeparator} />
-              <LoremIpsum p={1} />
-            </div>
-          </Fade>
+        <BackToTop />
 
-          <Fade bottom>
-            <div className={style.contentDivider}>
-              <div className={style.socialMedia}>
+        <Row>
+          <Col>
+            <Fade top>
+              <Content>
+                <h4>About Rosa</h4>
+                <HeadlineSeparator className={style.headlineSeparator} />
+                <LoremIpsum p={1} />
+              </Content>
+            </Fade>
+          </Col>
+        </Row>
+
+        <Fade bottom>
+          <Row>
+            <Col md='6'>
+              <Content>
                 <h4>Follow along</h4>
                 <ul>
                   <li>
@@ -61,8 +62,11 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div className={style.newsletterContainer}>
+              </Content>
+            </Col>
+
+            <Col md='6'>
+              <Content>
                 <h4>Newsletter</h4>
                 <form action=''>
                   <input type='text' placeholder='Your email address...' />
@@ -70,10 +74,10 @@ const Footer = () => {
                     <FaEnvelope />
                   </button>
                 </form>
-              </div>
-            </div>
-          </Fade>
-        </div>
+              </Content>
+            </Col>
+          </Row>
+        </Fade>
       </Container>
     </footer>
   )

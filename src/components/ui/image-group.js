@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import style from './image-group.module.scss'
+
 const ImageGroup = ({ children, className }) => {
   return (
     <div
-      className={className}
+      className={`${style.imageGroup} ${className}`}
       style={{
         display: 'grid',
         gridTemplateColumns: `repeat(2, 1fr)`,

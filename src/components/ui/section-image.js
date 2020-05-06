@@ -25,7 +25,7 @@ SectionImage.propTypes = {
   children: PropTypes.node.isRequired,
   id: PropTypes.string,
   className: PropTypes.string,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
   height: PropTypes.number,
 }
 

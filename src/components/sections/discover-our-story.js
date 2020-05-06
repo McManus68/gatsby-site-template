@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
 import Content from '../ui/content'
+import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
 
@@ -20,8 +21,7 @@ const DiscoverOurStory = () => (
         <Col md='12' lg='6'>
           <Fade left delay={300}>
             <Content>
-              <h2>Discover</h2>
-              <h1>Our Story</h1>
+              <Headline title='Our Story' subtitle='Discover' />
               <HeadlineSeparator />
               <LoremIpsum p={1} />
               <Link text='About us' />

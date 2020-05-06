@@ -1,8 +1,9 @@
 import React from 'react'
 
-import SectionImage from '../ui/section-image'
 import { Container } from 'react-bootstrap'
+
 import Content from '../ui/content'
+import SectionImage from '../ui/section-image'
 
 import Fade from 'react-reveal/Fade'
 

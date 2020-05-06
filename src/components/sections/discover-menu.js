@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Section from '../ui/section'
 import Content from '../ui/content'
 import ImageGroup from '../ui/image-group'
+import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
 
@@ -22,7 +23,7 @@ const DiscoverMenu = () => (
   <Section className={style.discoverMenu} id='menu'>
     <Container>
       <Row>
-        <Col md='12' lg='6' className='pr-0 pr-lg-5 my-auto'>
+        <Col md='12' lg='6' className='my-auto'>
           <Fade left delay={300}>
             <ImageGroup>
               <img src={img1} alt='' />
@@ -35,8 +36,7 @@ const DiscoverMenu = () => (
         <Col md='12' lg='6' className='pt-5 pt-lg-0 '>
           <Fade right delay={600}>
             <Content>
-              <h2>Discover</h2>
-              <h1>Menu</h1>
+              <Headline title='Menu' subtitle='Discover' />
               <HeadlineSeparator />
               <LoremIpsum p={1} />
               <Link text='View the full menu' />

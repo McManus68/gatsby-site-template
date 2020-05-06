@@ -1,1 +1,1 @@
-export { setNavOpen } from './ui/uiActions'
+export { setNavOpen, setNavItem } from './ui/uiActions'
