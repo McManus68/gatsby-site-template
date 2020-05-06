@@ -1,12 +1,10 @@
 import React from 'react'
 import { LoremIpsum } from 'react-lorem-ipsum'
 
-import Section from '../ui/section'
-import Container from '../ui/container'
-import Row from '../ui/row'
-import Column from '../ui/column'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import Headline from '../ui/headline'
+import Section from '../ui/section'
+import Content from '../ui/content'
 import ImageGroup from '../ui/image-group'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
@@ -24,7 +22,7 @@ const DiscoverMenu = () => (
   <Section className={style.discoverMenu} id='menu'>
     <Container>
       <Row>
-        <Column>
+        <Col md='12' lg='6' className='pr-0 pr-lg-5 my-auto'>
           <Fade left delay={300}>
             <ImageGroup>
               <img src={img1} alt='' />
@@ -33,20 +31,18 @@ const DiscoverMenu = () => (
               <img src={img4} alt='' />
             </ImageGroup>
           </Fade>
-        </Column>
-        <Column>
+        </Col>
+        <Col md='12' lg='6' className='pt-5 pt-lg-0 '>
           <Fade right delay={600}>
-            <div className={style.restaurantDescription}>
-              <Headline>
-                <h2>Discover</h2>
-                <h1>Menu</h1>
-                <HeadlineSeparator />
-              </Headline>
+            <Content>
+              <h2>Discover</h2>
+              <h1>Menu</h1>
+              <HeadlineSeparator />
               <LoremIpsum p={1} />
               <Link text='View the full menu' />
-            </div>
+            </Content>
           </Fade>
-        </Column>
+        </Col>
       </Row>
     </Container>
   </Section>

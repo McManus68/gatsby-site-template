@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Section from '../ui/section'
-import Container from '../ui/container'
+import { Container } from 'react-bootstrap'
 import Button from '../ui/button'
 import HeadlineSeparator from '../ui/headline-separator'
 

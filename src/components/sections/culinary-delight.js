@@ -1,12 +1,9 @@
 import React from 'react'
 import { LoremIpsum } from 'react-lorem-ipsum'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
-import Container from '../ui/container'
-import Row from '../ui/row'
-import Column from '../ui/column'
-
-import Headline from '../ui/headline'
+import Content from '../ui/content'
 import HeadlineSeparator from '../ui/headline-separator'
 import ImageGroup from '../ui/image-group'
 import Link from '../ui/link'
@@ -22,19 +19,19 @@ const CulinaryDelight = () => (
   <Section className={style.culinaryDelight} id='culinary-delight'>
     <Container>
       <Row>
-        <Column>
+        <Col md='12' lg='6'>
           <Fade left>
-            <Headline>
+            <Content>
               <h2>Culinary</h2>
               <h1>Delight</h1>
               <HeadlineSeparator />
-            </Headline>
-            <LoremIpsum p={1} />
-            <Link text='Make a reservation' />
+              <LoremIpsum p={1} />
+              <Link text='Make a reservation' />
+            </Content>
           </Fade>
-        </Column>
+        </Col>
 
-        <Column>
+        <Col md='12' lg='6' className='pt-5 pt-lg-0 px-lg-5 px-0 my-auto'>
           <ImageGroup>
             <Fade top>
               <img src={img1} alt='' />
@@ -43,7 +40,7 @@ const CulinaryDelight = () => (
               <img src={img2} alt='' />
             </Fade>
           </ImageGroup>
-        </Column>
+        </Col>
       </Row>
     </Container>
   </Section>

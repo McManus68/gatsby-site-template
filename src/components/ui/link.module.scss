@@ -8,6 +8,7 @@
   color: var(--secondary-font-color);
   position: relative;
   transition: color 0.5s;
+  text-align: center;
 
   &:before {
     content: '';

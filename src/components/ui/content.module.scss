@@ -1,5 +1,9 @@
-.headline {
+.content {
   text-align: center;
   margin-top: 6.9rem;
   color: var(--main-font-color-dark);
+
+  p {
+    text-align: left;
+  }
 }

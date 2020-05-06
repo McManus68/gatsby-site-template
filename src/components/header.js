@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setNavOpen } from '../state'
 
-import Container from './ui/container'
+import { Container } from 'react-bootstrap'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
 

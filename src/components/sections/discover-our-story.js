@@ -1,12 +1,9 @@
 import React from 'react'
 import { LoremIpsum } from 'react-lorem-ipsum'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
-import Container from '../ui/container'
-import Row from '../ui/row'
-import Column from '../ui/column'
-
-import Headline from '../ui/headline'
+import Content from '../ui/content'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
 
@@ -20,27 +17,22 @@ const DiscoverOurStory = () => (
   <Section className={style.discoverOurStory} id='discover'>
     <Container>
       <Row>
-        <Column>
+        <Col md='12' lg='6'>
           <Fade left delay={300}>
-            <div>
-              <Headline>
-                <h2>Discover</h2>
-                <h1>Our Story</h1>
-                <HeadlineSeparator />
-              </Headline>
+            <Content>
+              <h2>Discover</h2>
+              <h1>Our Story</h1>
+              <HeadlineSeparator />
               <LoremIpsum p={1} />
-
               <Link text='About us' />
-            </div>
+            </Content>
           </Fade>
-        </Column>
-        <Column>
+        </Col>
+        <Col md='12' lg='6' className='pt-5 pt-lg-0 px-lg-5 px-0 my-auto'>
           <Fade right delay={600}>
-            <div>
-              <img src={image} alt='' />
-            </div>
+            <img src={image} alt='' />
           </Fade>
-        </Column>
+        </Col>
       </Row>
     </Container>
   </Section>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import style from './link.module.scss'
 
 const Link = ({ text, className }) => {
-  return <a className={`${style.link}${className}`}>{text}</a>
+  return <a className={`${style.link} ${className}`}>{text}</a>
 }
 
 export default Link

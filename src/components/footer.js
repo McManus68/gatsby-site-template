@@ -2,7 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby'
 import { LoremIpsum } from 'react-lorem-ipsum'
 
-import Container from './ui/container'
+import { Container } from 'react-bootstrap'
 import HeadlineSeparator from './ui/headline-separator'
 
 import Fade from 'react-reveal/Fade'
