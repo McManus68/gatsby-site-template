@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.section {
+  padding: 3.9rem 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: $medium-device) {
+  .section {
+    padding: 7.9rem;
+  }
+}

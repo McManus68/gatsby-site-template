@@ -1,7 +1,13 @@
 import React from 'react'
+import { LoremIpsum } from 'react-lorem-ipsum'
 
-import UIHeadline from '../ui/ui-headline'
-import UILink from '../ui/ui-link'
+import Section from '../ui/section'
+import Container from '../ui/container'
+import Row from '../ui/row'
+import Headline from '../ui/headline'
+import ImageGroup from '../ui/image-group'
+import HeadlineSeparator from '../ui/headline-separator'
+import Link from '../ui/link'
 
 import img1 from '../../assets/images/menu-group-1.jpg'
 import img2 from '../../assets/images/menu-group-2.jpg'
@@ -9,42 +15,36 @@ import img3 from '../../assets/images/menu-group-3.jpg'
 import img4 from '../../assets/images/menu-group-4.jpg'
 
 import Fade from 'react-reveal/Fade'
-import { FaAsterisk } from 'react-icons/fa'
 
 import style from './discover-menu.module.scss'
 
 const DiscoverMenu = () => (
-  <section className={style.discoverMenu} id='menu'>
-    <div className='container'>
-      <div className='restaurant-info'>
+  <Section className={style.discoverMenu} id='menu'>
+    <Container>
+      <Row>
         <Fade left delay={300}>
-          <div className='image-group padding-right'>
+          <ImageGroup className='padding-right'>
             <img src={img1} alt='' />
             <img src={img2} alt='' />
             <img src={img3} alt='' />
             <img src={img4} alt='' />
-          </div>
+          </ImageGroup>
         </Fade>
         <Fade right delay={600}>
           <div className={style.restaurantDescription}>
-            <div className='global-headline'>
-              <UIHeadline title='Discover' />
+            <Headline>
+              <h2>Discover</h2>
               <h1>Menu</h1>
-              <FaAsterisk className='asterisk' />
-            </div>
+              <HeadlineSeparator />
+            </Headline>
 
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-              error quo praesentium consectetur itaque est saepe officiis
-              corporis magni alias dolorum quisquam neque soluta unde quis, nemo
-              facilis distinctio repellat.
-            </p>
-            <UILink text='View the full menu' />
+            <LoremIpsum p={1} />
+            <Link text='View the full menu' />
           </div>
         </Fade>
-      </div>
-    </div>
-  </section>
+      </Row>
+    </Container>
+  </Section>
 )
 
 export default DiscoverMenu

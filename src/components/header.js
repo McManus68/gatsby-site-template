@@ -2,6 +2,8 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setNavOpen } from '../state'
 
+import Container from './ui/container'
+
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 import logo from '../assets/images/logo-rosa.png'
@@ -13,7 +15,7 @@ const Header = ({ title }) => {
 
   return (
     <header className={style.header}>
-      <div className='container'>
+      <Container>
         <nav className={isNavOpen ? style.open : ''}>
           <div className={style.menuToggle}>
             <FaBars
@@ -51,7 +53,7 @@ const Header = ({ title }) => {
             </li>
           </ul>
         </nav>
-      </div>
+      </Container>
     </header>
   )
 }

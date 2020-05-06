@@ -1,8 +1,9 @@
 import React from 'react'
-import { FaAsterisk } from 'react-icons/fa'
 
-import UIHeadline from '../ui/ui-headline'
-import UIButton from '../ui/ui-button'
+import Section from '../ui/section'
+import Container from '../ui/container'
+import Button from '../ui/button'
+import HeadlineSeparator from '../ui/headline-separator'
 
 import style from './hero.module.scss'
 
@@ -14,23 +15,23 @@ const Hero = () => {
   }
 
   return (
-    <section className={style.hero} id='hero'>
-      <div className='container'>
-        <UIHeadline title='Welcome' className={style.headline} />
+    <Section className={style.hero} id='hero'>
+      <Container>
+        <h2>Welcome</h2>
         <h1>The Rosa</h1>
         <div className={style.headlineDescription}>
           <div className={style.separator}>
             <div className={`${style.line} ${style.lineLeft} `}></div>
-            <FaAsterisk className={style.asterisk} />
+            <HeadlineSeparator className={style.headlineSeparator} />
             <div className={`${style.line} ${style.lineRight} `}></div>
           </div>
           <div className={style.singleAnimation}>
             <h5>Ready to be opened</h5>
-            <UIButton text='Explore' onClick={goToHome} />
+            <Button text='Explore' onClick={goToHome} />
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   )
 }
 

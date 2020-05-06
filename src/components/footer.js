@@ -1,11 +1,14 @@
 import React from 'react'
 import { navigate } from 'gatsby'
+import { LoremIpsum } from 'react-lorem-ipsum'
+
+import Container from './ui/container'
+import HeadlineSeparator from './ui/headline-separator'
 
 import Fade from 'react-reveal/Fade'
 
 import {
   FaChevronUp,
-  FaAsterisk,
   FaTwitter,
   FaFacebook,
   FaPinterest,
@@ -19,7 +22,7 @@ import style from './footer.module.scss'
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <div className='container'>
+      <Container>
         <div className={style.backToTop}>
           <FaChevronUp
             className={style.chevron}
@@ -30,13 +33,8 @@ const Footer = () => {
           <Fade top>
             <div className={style.about}>
               <h4>About Rosa</h4>
-              <FaAsterisk className={style.asterisk} />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                nihil, nostrum voluptatibus, numquam nobis repellat assumenda
-                itaque, et neque modi soluta sit nam similique labore tenetur
-                praesentium? Soluta, numquam deleniti?
-              </p>
+              <HeadlineSeparator className={style.headlineSeparator} />
+              <LoremIpsum p={1} />
             </div>
           </Fade>
 
@@ -76,7 +74,7 @@ const Footer = () => {
             </div>
           </Fade>
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }

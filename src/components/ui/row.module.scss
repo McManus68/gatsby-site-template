@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.row {
+  text-align: center;
+
+  // MOBILE - Add a Margin to the bottom to create space between blocs, excepts for the last one
+  & > div:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: $medium-device) {
+  .row {
+    display: flex;
+    align-items: center;
+
+    & > div {
+      flex: 1;
+      margin-bottom: 0;
+    }
+
+    // MOBILE - Add a Margin to the Right to create space between blocs, excepts for the last one
+    & > div:not(:last-child) {
+      margin-right: 7rem;
+    }
+  }
+}

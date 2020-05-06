@@ -1,23 +1,26 @@
 import React from 'react'
 
+import SectionImage from '../ui/section-image'
+import Container from '../ui/container'
+import Headline from '../ui/headline'
+
 import Fade from 'react-reveal/Fade'
 
-import UIHeadline from '../ui/ui-headline'
-import style from './perfect-blend.module.scss'
+import image from '../../assets/images/perfect-blend.jpg'
 
 const PerfectBlend = () => (
-  <section className={style.perfectBlend + ' between'} id='blend'>
-    <div className='container'>
-      <div className='global-headline'>
+  <SectionImage image={image} height={65}>
+    <Container>
+      <Headline>
         <Fade bottom delay={300}>
-          <UIHeadline title='The perfect' />
+          <h2>The perfect</h2>
         </Fade>
         <Fade top delay={600}>
           <h1>Blend</h1>
         </Fade>
-      </div>
-    </div>
-  </section>
+      </Headline>
+    </Container>
+  </SectionImage>
 )
 
 export default PerfectBlend

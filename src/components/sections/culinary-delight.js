@@ -1,10 +1,15 @@
 import React from 'react'
+import { LoremIpsum } from 'react-lorem-ipsum'
 
-import UIHeadline from '../ui/ui-headline'
-import UILink from '../ui/ui-link'
+import Section from '../ui/section'
+import Container from '../ui/container'
+import Row from '../ui/row'
+import Headline from '../ui/headline'
+import HeadlineSeparator from '../ui/headline-separator'
+import ImageGroup from '../ui/image-group'
+import Link from '../ui/link'
 
 import Fade from 'react-reveal/Fade'
-import { FaAsterisk } from 'react-icons/fa'
 
 import img1 from '../../assets/images/delight-group-1.jpg'
 import img2 from '../../assets/images/delight-group-2.jpg'
@@ -12,36 +17,32 @@ import img2 from '../../assets/images/delight-group-2.jpg'
 import style from './culinary-delight.module.scss'
 
 const CulinaryDelight = () => (
-  <section className={style.culinaryDelight} id='culinary-delight'>
-    <div className='container'>
-      <div className='restaurant-info'>
+  <Section className={style.culinaryDelight} id='culinary-delight'>
+    <Container>
+      <Row>
         <Fade left>
-          <div className='restaurant-description padding-right'>
-            <div className='global-headline'>
-              <UIHeadline title='Culinary' />
+          <div className='padding-right'>
+            <Headline>
+              <h2>Culinary</h2>
               <h1>Delight</h1>
-              <FaAsterisk className='asterisk' />
-            </div>
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati
-            </p>
-            <UILink text='Make a reservation' />
+              <HeadlineSeparator />
+            </Headline>
+            <LoremIpsum p={1} />
+            <Link text='Make a reservation' />
           </div>
         </Fade>
 
-        <div className='image-group'>
+        <ImageGroup>
           <Fade top>
             <img src={img1} alt='' />
           </Fade>
           <Fade bottom>
             <img src={img2} alt='' />
           </Fade>
-        </div>
-      </div>
-    </div>
-  </section>
+        </ImageGroup>
+      </Row>
+    </Container>
+  </Section>
 )
 
 export default CulinaryDelight

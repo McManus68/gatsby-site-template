@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 0.9rem 1.8rem;
+  color: var(--body-font-color);
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: var(--secondary-font-color);
+  }
+}
