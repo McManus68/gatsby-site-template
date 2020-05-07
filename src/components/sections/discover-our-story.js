@@ -18,7 +18,7 @@ const DiscoverOurStory = () => (
   <Section className={style.discoverOurStory} id='discover'>
     <Container>
       <Row>
-        <Col md='12' lg='6'>
+        <Col sm='12' md='6'>
           <Fade left delay={300}>
             <Content>
               <Headline title='Our Story' subtitle='Discover' />
@@ -28,7 +28,7 @@ const DiscoverOurStory = () => (
             </Content>
           </Fade>
         </Col>
-        <Col md='12' lg='6' className='pt-5 pt-lg-0 px-lg-5 px-0 my-auto'>
+        <Col sm='12' md='6' className='my-auto'>
           <Fade right delay={600}>
             <img src={image} alt='' />
           </Fade>

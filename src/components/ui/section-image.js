@@ -1,20 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Parallax } from 'react-parallax'
+
+import style from './section-image.module.scss'
+
 const SectionImage = ({ children, id, className, image, height }) => {
   return (
-    <section
-      style={{
-        background: `url(${image}) center no-repeat`,
-        backgroundSize: 'cover',
-        height: `${height}vh`,
-        display: 'flex',
-        alignItems: 'center',
-      }}
-      className={className}
-      id={id}
-    >
-      {children}
+    <section className={className} id={id}>
+      <Parallax bgImage={image} strength={200} className={style.sectionImage}>
+        <div
+          style={{
+            height: `${height}vh`,
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          {children}
+        </div>
+      </Parallax>
     </section>
   )
 }

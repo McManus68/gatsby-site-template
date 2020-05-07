@@ -20,7 +20,7 @@ const CulinaryDelight = () => (
   <Section className={style.culinaryDelight} id='culinary-delight'>
     <Container>
       <Row>
-        <Col md='12' lg='6'>
+        <Col sm='12' md='6'>
           <Fade left>
             <Content>
               <Headline title='Delight' subtitle='Culinary' />
@@ -31,7 +31,7 @@ const CulinaryDelight = () => (
           </Fade>
         </Col>
 
-        <Col md='12' lg='6' className='my-auto'>
+        <Col sm='12' md='6' className='my-auto'>
           <ImageGroup>
             <Fade top>
               <img src={img1} alt='' />

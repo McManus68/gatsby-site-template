@@ -23,7 +23,7 @@ const DiscoverMenu = () => (
   <Section className={style.discoverMenu} id='menu'>
     <Container>
       <Row>
-        <Col md='12' lg='6' className='my-auto'>
+        <Col sm='12' md='6' className='my-auto order-sm-2'>
           <Fade left delay={300}>
             <ImageGroup>
               <img src={img1} alt='' />
@@ -33,7 +33,7 @@ const DiscoverMenu = () => (
             </ImageGroup>
           </Fade>
         </Col>
-        <Col md='12' lg='6' className='pt-5 pt-lg-0 '>
+        <Col sm='12' md='6' className='order-sm-1'>
           <Fade right delay={600}>
             <Content>
               <Headline title='Menu' subtitle='Discover' />

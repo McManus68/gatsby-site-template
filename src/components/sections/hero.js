@@ -1,14 +1,14 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 
-import Section from '../ui/section'
+import SectionImage from '../ui/section-image'
 import { Container } from 'react-bootstrap'
 import Button from '../ui/button'
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 
+import image from '../../assets/images/hero.jpg'
 import style from './hero.module.scss'
-
-import { navigate } from 'gatsby'
 
 const Hero = () => {
   const goToHome = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
   }
 
   return (
-    <Section className={style.hero} id='hero'>
+    <SectionImage className={style.hero} image={image} id='hero'>
       <Container>
         <Headline title='The Rosa' subtitle='Welcome' />
         <div className={style.separator}>
@@ -29,7 +29,7 @@ const Hero = () => {
           <Button text='Explore' onClick={goToHome} />
         </div>
       </Container>
-    </Section>
+    </SectionImage>
   )
 }
 

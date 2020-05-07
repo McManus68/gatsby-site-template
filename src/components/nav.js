@@ -28,10 +28,15 @@ const Nav = ({ items }) => {
       <a href='index.html' className='logo'>
         <img src={logo} alt='logo' />
       </a>
-      <ul>
+      <ul className={style.menu}>
         {items.map((item, i) => {
           return (
-            <li key={i} className={navItem === item ? style.active : ''}>
+            <li
+              key={i}
+              className={`${style.menuItem} ${
+                navItem === item ? style.active : ''
+              }`}
+            >
               <a href='#' onClick={() => dispatch(setNavItem(item))}>
                 {item}
               </a>
