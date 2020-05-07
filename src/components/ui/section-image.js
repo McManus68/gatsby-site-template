@@ -8,7 +8,14 @@ import style from './section-image.module.scss'
 const SectionImage = ({ children, id, className, image, height }) => {
   return (
     <section className={className} id={id}>
-      <Parallax bgImage={image} strength={200} className={style.sectionImage}>
+      <Parallax
+        bgImage={image}
+        strength={300}
+        className={style.sectionImage}
+        bgImageStyle={{
+          objectFit: 'cover',
+        }}
+      >
         <div
           style={{
             height: `${height}vh`,

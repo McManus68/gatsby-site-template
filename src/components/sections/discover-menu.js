@@ -23,17 +23,7 @@ const DiscoverMenu = () => (
   <Section className={style.discoverMenu} id='menu'>
     <Container>
       <Row>
-        <Col sm='12' md='6' className='my-auto order-sm-2'>
-          <Fade left delay={300}>
-            <ImageGroup>
-              <img src={img1} alt='' />
-              <img src={img2} alt='' />
-              <img src={img3} alt='' />
-              <img src={img4} alt='' />
-            </ImageGroup>
-          </Fade>
-        </Col>
-        <Col sm='12' md='6' className='order-sm-1'>
+        <Col sm='12' md='6' className='order-md-2'>
           <Fade right delay={600}>
             <Content>
               <Headline title='Menu' subtitle='Discover' />
@@ -41,6 +31,16 @@ const DiscoverMenu = () => (
               <LoremIpsum p={1} />
               <Link text='View the full menu' />
             </Content>
+          </Fade>
+        </Col>
+        <Col sm='12' md='6' className='my-auto order-md-1'>
+          <Fade left delay={300}>
+            <ImageGroup>
+              <img src={img1} alt='' />
+              <img src={img2} alt='' />
+              <img src={img3} alt='' />
+              <img src={img4} alt='' />
+            </ImageGroup>
           </Fade>
         </Col>
       </Row>
