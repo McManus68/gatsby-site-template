@@ -7,10 +7,9 @@ import Content from '../ui/content'
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
+import ImageGallery from '../ui/image-gallery'
 
 import Fade from 'react-reveal/Fade'
-
-import image from '../../assets/images/our-story-1.jpg'
 
 import style from './discover-our-story.module.scss'
 
@@ -30,7 +29,7 @@ const DiscoverOurStory = () => (
         </Col>
         <Col sm='12' md='6' className='my-auto'>
           <Fade right delay={600}>
-            <img src={image} alt='' />
+            <ImageGallery images={['our-story-1.jpg']} />
           </Fade>
         </Col>
       </Row>

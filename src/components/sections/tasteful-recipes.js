@@ -3,14 +3,14 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 
 import Content from '../ui/content'
-import SectionImage from '../ui/section-image'
+import SectionParralax from '../ui/section-parallax'
 
 import Fade from 'react-reveal/Fade'
 
 import image from '../../assets/images/tasteful-recipes.jpg'
 
 const TastefulRecipes = () => (
-  <SectionImage image={image} height={65}>
+  <SectionParralax image={image} height={65}>
     <Container>
       <Content>
         <Fade bottom delay={300}>
@@ -21,7 +21,7 @@ const TastefulRecipes = () => (
         </Fade>
       </Content>
     </Container>
-  </SectionImage>
+  </SectionParralax>
 )
 
 export default TastefulRecipes

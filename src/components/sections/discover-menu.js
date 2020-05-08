@@ -5,15 +5,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
 import Content from '../ui/content'
-import ImageGroup from '../ui/image-group'
+import ImageGallery from '../ui/image-gallery'
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 import Link from '../ui/link'
-
-import img1 from '../../assets/images/menu-group-1.jpg'
-import img2 from '../../assets/images/menu-group-2.jpg'
-import img3 from '../../assets/images/menu-group-3.jpg'
-import img4 from '../../assets/images/menu-group-4.jpg'
 
 import Fade from 'react-reveal/Fade'
 
@@ -35,12 +30,14 @@ const DiscoverMenu = () => (
         </Col>
         <Col sm='12' md='6' className='my-auto order-md-1'>
           <Fade left delay={300}>
-            <ImageGroup>
-              <img src={img1} alt='' />
-              <img src={img2} alt='' />
-              <img src={img3} alt='' />
-              <img src={img4} alt='' />
-            </ImageGroup>
+            <ImageGallery
+              images={[
+                'menu-group-1.jpg',
+                'menu-group-2.jpg',
+                'menu-group-3.jpg',
+                'menu-group-4.jpg',
+              ]}
+            />
           </Fade>
         </Col>
       </Row>

@@ -6,13 +6,10 @@ import Section from '../ui/section'
 import Content from '../ui/content'
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
-import ImageGroup from '../ui/image-group'
+import ImageGallery from '../ui/image-gallery'
 import Link from '../ui/link'
 
 import Fade from 'react-reveal/Fade'
-
-import img1 from '../../assets/images/delight-group-1.jpg'
-import img2 from '../../assets/images/delight-group-2.jpg'
 
 import style from './culinary-delight.module.scss'
 
@@ -32,14 +29,11 @@ const CulinaryDelight = () => (
         </Col>
 
         <Col sm='12' md='6' className='my-auto'>
-          <ImageGroup>
-            <Fade top>
-              <img src={img1} alt='' />
-            </Fade>
-            <Fade bottom>
-              <img src={img2} alt='' />
-            </Fade>
-          </ImageGroup>
+          <Fade right>
+            <ImageGallery
+              images={['delight-group-1.jpg', 'delight-group-2.jpg']}
+            />
+          </Fade>
         </Col>
       </Row>
     </Container>

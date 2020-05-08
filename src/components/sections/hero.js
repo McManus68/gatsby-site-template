@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby'
 
-import SectionImage from '../ui/section-image'
+import SectionParralax from '../ui/section-parallax'
 import { Container } from 'react-bootstrap'
 import Button from '../ui/button'
 import Headline from '../ui/headline'
@@ -16,7 +16,7 @@ const Hero = () => {
   }
 
   return (
-    <SectionImage className={style.hero} image={image} id='hero'>
+    <SectionParralax className={style.hero} image={image} id='hero'>
       <Container>
         <Headline title='The Rosa' subtitle='Welcome' />
         <div className={style.separator}>
@@ -29,7 +29,7 @@ const Hero = () => {
           <Button text='Explore' onClick={goToHome} />
         </div>
       </Container>
-    </SectionImage>
+    </SectionParralax>
   )
 }
 

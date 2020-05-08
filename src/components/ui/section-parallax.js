@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 
 import { Parallax } from 'react-parallax'
 
-import style from './section-image.module.scss'
+import style from './section-parallax.module.scss'
 
-const SectionImage = ({ children, id, className, image, height }) => {
+const SectionParallax = ({ id, children, className, image, height }) => {
   return (
     <section className={className} id={id}>
       <Parallax
         bgImage={image}
         strength={300}
-        className={style.sectionImage}
+        className={style.sectionParallax}
         bgImageStyle={{
           objectFit: 'cover',
         }}
@@ -30,17 +30,17 @@ const SectionImage = ({ children, id, className, image, height }) => {
   )
 }
 
-export default SectionImage
+export default SectionParallax
 
-SectionImage.propTypes = {
-  children: PropTypes.node.isRequired,
+SectionParallax.propTypes = {
   id: PropTypes.string,
+  children: PropTypes.node,
   className: PropTypes.string,
   image: PropTypes.string.isRequired,
   height: PropTypes.number,
 }
 
-SectionImage.defaultProps = {
+SectionParallax.defaultProps = {
   className: '',
   height: 100,
 }
