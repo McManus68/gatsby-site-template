@@ -33,6 +33,12 @@
                       "title": "Discover",
                       "subtitle": "Our Story",
                       "buttonText": "aboutUs"
+                    },
+                    "animation": {
+                      "type": "reveal",
+                      "params": {
+                        "delay": 200
+                      }
                     }
                   },
                   {
