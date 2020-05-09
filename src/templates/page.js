@@ -35,7 +35,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     dataJson(
-      site: { pages: { elemMatch: { slug: { eq: $slug } } }, id: { eq: 1 } }
+      site: { pages: { elemMatch: { slug: { eq: $slug } } }, id: { eq: 2 } }
     ) {
       site {
         pages {

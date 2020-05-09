@@ -45,19 +45,19 @@ const Footer = () => {
                 <h4>Follow along</h4>
                 <ul>
                   <li>
-                    <a href='/'>
+                    <a href='/t'>
                       <FaTwitter className={style.socialIcon} />
                     </a>
-                    <a href='#'>
+                    <a href='#home'>
                       <FaFacebook className={style.socialIcon} />
                     </a>
-                    <a href='#'>
+                    <a href='#t'>
                       <FaPinterest className={style.socialIcon} />
                     </a>
-                    <a href='#'>
+                    <a href='#t'>
                       <FaLinkedinIn className={style.socialIcon} />
                     </a>
-                    <a href='#'>
+                    <a href='#t'>
                       <FaTripadvisor className={style.socialIcon} />
                     </a>
                   </li>

@@ -37,7 +37,7 @@ const Nav = ({ items }) => {
                 navItem === item ? style.active : ''
               }`}
             >
-              <a href='#' onClick={() => dispatch(setNavItem(item))}>
+              <a href='#home' onClick={() => dispatch(setNavItem(item))}>
                 {item}
               </a>
             </li>

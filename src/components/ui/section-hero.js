@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 
 import { navigate } from 'gatsby'
 
-import SectionParralax from '../ui/section-parallax'
+import SectionParralax from './section-parallax'
 import { Container } from 'react-bootstrap'
-import Button from '../ui/button'
-import Headline from '../ui/headline'
-import HeadlineSeparator from '../ui/headline-separator'
+import Button from './button'
+import Headline from './headline'
+import HeadlineSeparator from './headline-separator'
 
-import style from './hero.module.scss'
+import style from './section-hero.module.scss'
 
-const Hero = ({ title, subtitle, image, overlay }) => {
+const SectionHero = ({ title, subtitle, image, overlay }) => {
   const goToHome = () => {
     navigate('/')
   }
@@ -39,15 +39,15 @@ const Hero = ({ title, subtitle, image, overlay }) => {
   )
 }
 
-export default Hero
+export default SectionHero
 
-Hero.propTypes = {
+SectionHero.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
   overlay: PropTypes.string,
 }
 
-Hero.defaultProps = {
+SectionHero.defaultProps = {
   overlay: 'none',
 }

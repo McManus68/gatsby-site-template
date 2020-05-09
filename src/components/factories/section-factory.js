@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Section from '../ui/section'
 import SectionHeadline from '../ui/section-headline'
-import Hero from '../sections/hero'
+import SectionHero from '../ui/section-hero'
 
 import BlocFactory from './bloc-factory'
 
 const SectionFactory = ({ section, getImage }) => {
   switch (section.type) {
     case 'section-hero':
-      return <Hero {...section.params} />
+      return <SectionHero {...section.params} />
 
     case 'section-headline':
       return <SectionHeadline {...section.params} />

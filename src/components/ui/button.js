@@ -5,9 +5,9 @@ import style from './button.module.scss'
 
 const Button = ({ text, onClick, className }) => {
   return (
-    <a className={`${style.button}${className}`} onClick={onClick}>
+    <button className={`${style.button}${className}`} onClick={onClick}>
       {text}
-    </a>
+    </button>
   )
 }
 
