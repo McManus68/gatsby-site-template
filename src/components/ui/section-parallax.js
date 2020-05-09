@@ -1,15 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { useSelector } from 'react-redux'
 import { Parallax } from 'react-parallax'
 
 import style from './section-parallax.module.scss'
 
-const SectionParallax = ({ id, children, className, image, height }) => {
+const SectionParallax = ({
+  id,
+  children,
+  className,
+  image,
+  height,
+  overlay,
+}) => {
+  const bg = useSelector(state => state.image.images).get(image)
   return (
     <section className={className} id={id}>
       <Parallax
-        bgImage={image}
+        bgImage={bg.src}
         strength={300}
         className={style.sectionParallax}
         bgImageStyle={{
@@ -21,6 +30,7 @@ const SectionParallax = ({ id, children, className, image, height }) => {
             height: `${height}vh`,
             display: 'flex',
             alignItems: 'center',
+            backgroundColor: overlay,
           }}
         >
           {children}
@@ -42,5 +52,6 @@ SectionParallax.propTypes = {
 
 SectionParallax.defaultProps = {
   className: '',
+  overlay: 'none',
   height: 100,
 }

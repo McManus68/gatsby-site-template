@@ -14,7 +14,8 @@
             "params": {
               "title": "McManus & Cie",
               "subtitle": "Salon",
-              "image": "theme2-hero.jpg"
+              "image": "theme2-hero.jpg",
+              "overlay": "rgba(0, 0, 0, 0.8)"
             }
           },
           {
@@ -55,7 +56,8 @@
             "params": {
               "title": "Style",
               "subtitle": "Improve your",
-              "image": "theme2-style.jpg"
+              "image": "theme2-style.jpg",
+              "overlay": "rgba(0, 0, 0, 0.8)"
             }
           },
           {
@@ -96,7 +98,8 @@
             "params": {
               "title": "Team",
               "subtitle": "Experimented",
-              "image": "theme2-experience.jpg"
+              "image": "theme2-experience.jpg",
+              "overlay": "rgba(0, 0, 0, 0.8)"
             }
           },
           {

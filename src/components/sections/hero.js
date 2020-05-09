@@ -11,13 +11,18 @@ import HeadlineSeparator from '../ui/headline-separator'
 
 import style from './hero.module.scss'
 
-const Hero = ({ title, subtitle, image }) => {
+const Hero = ({ title, subtitle, image, overlay }) => {
   const goToHome = () => {
     navigate('/')
   }
 
   return (
-    <SectionParralax className={style.hero} image={image} id='hero'>
+    <SectionParralax
+      className={style.hero}
+      image={image}
+      overlay={overlay}
+      id='hero'
+    >
       <Container>
         <Headline title={title} subtitle={subtitle} />
         <div className={style.separator}>
@@ -39,4 +44,10 @@ export default Hero
 Hero.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
+  image: PropTypes.string,
+  overlay: PropTypes.string,
+}
+
+Hero.defaultProps = {
+  overlay: 'none',
 }

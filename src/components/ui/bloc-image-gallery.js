@@ -19,7 +19,7 @@ const BlocImageGallery = ({ images, className }) => {
       }}
     >
       {images.map((image, i) => {
-        return <Image src={image} key={i} />
+        return <Image src={image} key={i} className={style.image} />
       })}
     </div>
   )

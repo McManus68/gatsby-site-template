@@ -10,12 +10,13 @@ import Fade from 'react-reveal/Fade'
 
 import style from './section-headline.module.scss'
 
-const SectionHeadline = ({ id, title, subtitle, image, height }) => (
+const SectionHeadline = ({ id, title, subtitle, image, height, overlay }) => (
   <SectionParallax
     id={id}
     image={image}
     height={height}
     className={style.sectionHeadline}
+    overlay={overlay}
   >
     <Container>
       <Content>
@@ -39,9 +40,11 @@ SectionHeadline.propTypes = {
   className: PropTypes.string,
   image: PropTypes.string.isRequired,
   height: PropTypes.number,
+  overlay: PropTypes.string,
 }
 
 SectionHeadline.defaultProps = {
   className: '',
   height: 65,
+  overlay: 'none',
 }
