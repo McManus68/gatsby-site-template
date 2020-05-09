@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Restaurant Template`,
-    description: `A restaurant template for Gatsby`,
+    title: `Gatsby Site Template`,
+    description: `A Template for Creating Gatsby Sites`,
     author: `@etarrou`,
   },
   plugins: [

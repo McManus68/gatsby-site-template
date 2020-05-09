@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-template-restaurant",
+  "name": "gatsby-site-template",
   "private": true,
-  "description": "A Template for A restaurant WebSite",
+  "description": "A Template for Creating Gatsby Sites",
   "version": "0.1.0",
   "author": "Emmanuel Tarrou <emmanuel.tarrou34@gmail.com>",
   "dependencies": {
