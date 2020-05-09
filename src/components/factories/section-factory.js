@@ -25,15 +25,7 @@ const SectionFactory = ({ section, getImage }) => {
               return (
                 <Row key={i}>
                   {row.blocs.map((bloc, j) => {
-                    return (
-                      <Col
-                        key={j}
-                        className={bloc.classes}
-                        {...bloc.responsive}
-                      >
-                        <BlocFactory bloc={bloc} />
-                      </Col>
-                    )
+                    return <BlocFactory key={j} bloc={bloc} />
                   })}
                 </Row>
               )
