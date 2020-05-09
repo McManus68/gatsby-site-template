@@ -1,7 +1,7 @@
 .back-to-top {
   width: 4rem;
   height: 4rem;
-  background-color: var(--footer-color);
+  background-color: var(--footer-bg-color);
   position: absolute;
   top: -2rem;
   left: 50%;
@@ -9,7 +9,7 @@
   border-radius: 50%;
 
   a {
-    color: white;
+    color: var(--secondary-font-color);
   }
 
   .chevron {

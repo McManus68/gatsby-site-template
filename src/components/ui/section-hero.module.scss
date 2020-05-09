@@ -14,7 +14,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: var(--secondary-font-color);
     animation: scale 0.5s forwards;
   }
 
@@ -27,7 +27,7 @@
       width: 100%;
       max-width: 8.4rem;
       height: 2px;
-      background-color: #fff;
+      background-color: var(--secondary-font-color);
       position: relative;
       opacity: 0;
       animation: grow 2s forwards;
@@ -47,16 +47,16 @@
     }
 
     .lineLeft::before {
-      border-left-color: #fff;
+      border-left-color: var(--secondary-font-color);
       left: 0;
     }
     .lineRight::before {
-      border-right-color: #fff;
+      border-right-color: var(--secondary-font-color);
       right: 0;
     }
 
     .headline-separator {
-      color: var(--secondary-font-color);
+      color: var(--primary-color);
       margin: 0 0.4rem;
       opacity: 0;
       animation: spin 0.5s forwards;
@@ -65,7 +65,7 @@
   }
 
   h5 {
-    color: #fff;
+    color: var(--secondary-font-color);
     font-size: 0.9rem;
     font-weight: 100;
     text-transform: uppercase;

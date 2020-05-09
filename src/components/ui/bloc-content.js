@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import { LoremIpsum } from 'react-lorem-ipsum'
 
 import Content from '../ui/content'
-import Headline from '../ui/headline'
+import Headline from '@bit/mcmanus68.ui-react.headline'
+
 import Link from '../ui/link'
 import HeadlineSeparator from '../ui/headline-separator'
 

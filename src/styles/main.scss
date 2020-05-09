@@ -1,21 +1,7 @@
 @import './_variables';
-
+@import './_theme1';
 @import '~bootstrap/scss/bootstrap-grid';
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Source+Sans+Pro:wght@400;900&display=swap');
-
-:root {
-  --main-font: 'Source Sans Pro', sans-serif;
-  --secondary-font: 'Herr Von Muellerhoff', cursive;
-  --body-font: 'Cabin', sans-serif;
-  --main-font-color-dark: #252525;
-  --secondary-font-color: #c59d5f;
-  --footer-color: #121212;
-  --body-font-color: #515151;
-  --section-padding: 2.2rem 1.8rem;
-  --bloc-padding: 2.4rem;
-  --element-spacing: 1.2rem;
-}
 
 *,
 *::before,
@@ -31,14 +17,14 @@ body {
 
 html {
   font-family: var(--body-font);
-  color: var(--body-font-color);
+  color: var(--primary-font-color);
   scroll-behavior: smooth;
 }
 
 h1 {
-  color: var(--main-font-color-dark);
+  color: var(--secondary-color);
   font-size: 3.1rem;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 5px;
@@ -48,7 +34,7 @@ h1 {
 h2 {
   font-size: 4.2rem;
   font-family: var(--secondary-font);
-  color: var(--secondary-font-color);
+  color: var(--primary-color);
   font-weight: 600;
   line-height: 0.4;
   letter-spacing: 2px;

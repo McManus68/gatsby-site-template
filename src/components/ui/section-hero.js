@@ -5,8 +5,8 @@ import { navigate } from 'gatsby'
 
 import SectionParralax from './section-parallax'
 import { Container } from 'react-bootstrap'
-import Button from './button'
-import Headline from './headline'
+import Button from '@bit/mcmanus68.ui-react.button'
+import Headline from '@bit/mcmanus68.ui-react.headline'
 import HeadlineSeparator from './headline-separator'
 
 import style from './section-hero.module.scss'
