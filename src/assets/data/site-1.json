@@ -18,7 +18,7 @@
             }
           },
           {
-            "type": "section",
+            "type": "section-custom",
             "rows": [
               {
                 "blocs": [
@@ -59,7 +59,7 @@
             }
           },
           {
-            "type": "section",
+            "type": "section-custom",
             "rows": [
               {
                 "blocs": [
@@ -105,7 +105,7 @@
             }
           },
           {
-            "type": "section",
+            "type": "section-custom",
             "rows": [
               {
                 "blocs": [

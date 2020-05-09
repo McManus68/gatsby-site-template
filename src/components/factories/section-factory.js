@@ -9,15 +9,14 @@ import Hero from '../sections/hero'
 import BlocFactory from './bloc-factory'
 
 const SectionFactory = ({ section, getImage }) => {
-  const params = section.params
   switch (section.type) {
     case 'section-hero':
-      return <Hero {...params} />
+      return <Hero {...section.params} />
 
     case 'section-headline':
-      return <SectionHeadline {...params} />
+      return <SectionHeadline {...section.params} />
 
-    case 'section':
+    case 'section-custom':
       return (
         <Section>
           <Container>
