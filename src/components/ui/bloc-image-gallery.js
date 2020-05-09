@@ -3,17 +3,18 @@ import PropTypes from 'prop-types'
 
 import Image from './image'
 
-import style from './image-gallery.module.scss'
+import style from './bloc-image-gallery.module.scss'
 
-const ImageGallery = ({ images, className }) => {
+const BlocImageGallery = ({ images, className }) => {
   const columns = Math.ceil(Math.sqrt(images.length))
-
+  const height = images.length <= 2 ? 100 : Math.ceil(100 / columns) - 5
   return (
     <div
-      className={`${style.imageGallery} ${className}`}
+      className={`${style.blocImageGallery} ${className}`}
       style={{
         display: 'grid',
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        gridTemplateRows: `repeat(${columns}, ${height}%)`,
         gap: '1.5rem',
       }}
     >
@@ -24,13 +25,13 @@ const ImageGallery = ({ images, className }) => {
   )
 }
 
-export default ImageGallery
+export default BlocImageGallery
 
-ImageGallery.propTypes = {
+BlocImageGallery.propTypes = {
   images: PropTypes.array.isRequired,
   className: PropTypes.string,
 }
 
-ImageGallery.defaultProps = {
+BlocImageGallery.defaultProps = {
   className: '',
 }

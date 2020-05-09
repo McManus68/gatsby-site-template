@@ -1,0 +1,144 @@
+{
+  "site": {
+    "id": 2,
+    "title": "Haircut Salon Downtown ",
+    "description": "Best HairCut in Montreal City",
+    "pages": [
+      {
+        "title": "Home",
+        "slug": "home",
+        "description": "Home page",
+        "sections": [
+          {
+            "type": "section-hero",
+            "params": {
+              "title": "McManus & Cie",
+              "subtitle": "Salon",
+              "image": "theme2-hero.jpg"
+            }
+          },
+          {
+            "type": "section",
+            "rows": [
+              {
+                "blocs": [
+                  {
+                    "type": "bloc-content",
+                    "classes": "",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "title": "Girls",
+                      "subtitle": "For",
+                      "buttonText": "Make a reservation"
+                    }
+                  },
+                  {
+                    "type": "bloc-gallery",
+                    "classes": "my-auto",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "images": ["theme2-girls1.jpg", "theme2-girls2.jpg"]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section-headline",
+            "params": {
+              "title": "Style",
+              "subtitle": "Improve your",
+              "image": "theme2-style.jpg"
+            }
+          },
+          {
+            "type": "section",
+            "rows": [
+              {
+                "blocs": [
+                  {
+                    "type": "bloc-content",
+                    "classes": "",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "title": "Meet",
+                      "subtitle": "Our Barbers",
+                      "buttonText": "Book an Appointment"
+                    }
+                  },
+                  {
+                    "type": "bloc-gallery",
+                    "classes": "my-auto",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "images": ["theme2-barbers1.jpg"]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section-headline",
+            "params": {
+              "title": "Team",
+              "subtitle": "Experimented",
+              "image": "theme2-experience.jpg"
+            }
+          },
+          {
+            "type": "section",
+            "rows": [
+              {
+                "blocs": [
+                  {
+                    "type": "bloc-content",
+                    "classes": "order-md-2",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "title": "Menu",
+                      "subtitle": "Discover",
+                      "buttonText": "View the full menu"
+                    }
+                  },
+                  {
+                    "type": "bloc-gallery",
+                    "classes": "my-auto order-md-1",
+                    "responsive": {
+                      "sm": 12,
+                      "md": 6
+                    },
+                    "params": {
+                      "images": [
+                        "theme2-services1.jpg",
+                        "theme2-services2.jpg",
+                        "theme2-services3.jpg",
+                        "theme2-services4.jpg"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

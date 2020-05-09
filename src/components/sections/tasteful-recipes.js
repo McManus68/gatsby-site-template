@@ -7,7 +7,7 @@ import SectionParralax from '../ui/section-parallax'
 
 import Fade from 'react-reveal/Fade'
 
-import image from '../../assets/images/tasteful-recipes.jpg'
+import image from '../../assets/images/theme-1/theme1-tasteful-recipes.jpg'
 
 const TastefulRecipes = () => (
   <SectionParralax image={image} height={65}>

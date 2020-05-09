@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { navigate } from 'gatsby'
 
 import SectionParralax from '../ui/section-parallax'
@@ -7,10 +9,9 @@ import Button from '../ui/button'
 import Headline from '../ui/headline'
 import HeadlineSeparator from '../ui/headline-separator'
 
-import image from '../../assets/images/hero.jpg'
 import style from './hero.module.scss'
 
-const Hero = () => {
+const Hero = ({ title, subtitle, image }) => {
   const goToHome = () => {
     navigate('/')
   }
@@ -18,7 +19,7 @@ const Hero = () => {
   return (
     <SectionParralax className={style.hero} image={image} id='hero'>
       <Container>
-        <Headline title='The Rosa' subtitle='Welcome' />
+        <Headline title={title} subtitle={subtitle} />
         <div className={style.separator}>
           <div className={`${style.line} ${style.lineLeft} `}></div>
           <HeadlineSeparator className={style.headlineSeparator} />
@@ -34,3 +35,8 @@ const Hero = () => {
 }
 
 export default Hero
+
+Hero.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+}

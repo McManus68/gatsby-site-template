@@ -1,13 +1,9 @@
 import React from 'react'
-import { LoremIpsum } from 'react-lorem-ipsum'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
-import Content from '../ui/content'
-import Headline from '../ui/headline'
-import HeadlineSeparator from '../ui/headline-separator'
-import Link from '../ui/link'
-import ImageGallery from '../ui/image-gallery'
+import BlocContent from '../ui/bloc-content'
+import BlocImageGallery from '../ui/bloc-image-gallery'
 
 import Fade from 'react-reveal/Fade'
 
@@ -19,17 +15,16 @@ const DiscoverOurStory = () => (
       <Row>
         <Col sm='12' md='6'>
           <Fade left delay={300}>
-            <Content>
-              <Headline title='Our Story' subtitle='Discover' />
-              <HeadlineSeparator />
-              <LoremIpsum p={1} />
-              <Link text='About us' />
-            </Content>
+            <BlocContent
+              title='Our Story'
+              subtitle='Discover'
+              buttonText='About us'
+            />
           </Fade>
         </Col>
         <Col sm='12' md='6' className='my-auto'>
           <Fade right delay={600}>
-            <ImageGallery images={['our-story-1.jpg']} />
+            <BlocImageGallery images={['our-story-1.jpg']} />
           </Fade>
         </Col>
       </Row>

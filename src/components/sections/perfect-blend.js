@@ -6,7 +6,7 @@ import Content from '../ui/content'
 
 import Fade from 'react-reveal/Fade'
 
-import image from '../../assets/images/perfect-blend.jpg'
+import image from '../../assets/images/theme-1/theme1-perfect-blend.jpg'
 
 const PerfectBlend = () => (
   <SectionParralax image={image} height={65}>

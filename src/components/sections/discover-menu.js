@@ -1,14 +1,9 @@
 import React from 'react'
-import { LoremIpsum } from 'react-lorem-ipsum'
-
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
-import Content from '../ui/content'
-import ImageGallery from '../ui/image-gallery'
-import Headline from '../ui/headline'
-import HeadlineSeparator from '../ui/headline-separator'
-import Link from '../ui/link'
+import BlocContent from '../ui/bloc-content'
+import BlocImageGallery from '../ui/bloc-image-gallery'
 
 import Fade from 'react-reveal/Fade'
 
@@ -20,17 +15,16 @@ const DiscoverMenu = () => (
       <Row>
         <Col sm='12' md='6' className='order-md-2'>
           <Fade right delay={600}>
-            <Content>
-              <Headline title='Menu' subtitle='Discover' />
-              <HeadlineSeparator />
-              <LoremIpsum p={1} />
-              <Link text='View the full menu' />
-            </Content>
+            <BlocContent
+              title='Menu'
+              subtitle='Discover'
+              buttonText='View the full menu'
+            />
           </Fade>
         </Col>
         <Col sm='12' md='6' className='my-auto order-md-1'>
           <Fade left delay={300}>
-            <ImageGallery
+            <BlocImageGallery
               images={[
                 'menu-group-1.jpg',
                 'menu-group-2.jpg',

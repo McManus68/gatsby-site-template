@@ -1,5 +1,5 @@
 import safeGet from 'lodash.get'
-import React, { useMemo } from 'react'
+import React, { useMemo, useEffect } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -11,6 +11,7 @@ const Image = ({ src, ...props }) => {
           relativePath
           childImageSharp {
             fluid {
+              originalName
               ...GatsbyImageSharpFluid_noBase64
             }
           }
@@ -20,7 +21,10 @@ const Image = ({ src, ...props }) => {
   `)
 
   const match = useMemo(
-    () => data.allFile.nodes.find(({ relativePath }) => src === relativePath),
+    () =>
+      data.allFile.nodes.find(
+        ({ childImageSharp }) => src === childImageSharp.fluid.originalName
+      ),
     [data, src]
   )
 

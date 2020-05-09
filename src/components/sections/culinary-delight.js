@@ -1,12 +1,10 @@
 import React from 'react'
-import { LoremIpsum } from 'react-lorem-ipsum'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Section from '../ui/section'
-import Content from '../ui/content'
-import Headline from '../ui/headline'
-import HeadlineSeparator from '../ui/headline-separator'
-import ImageGallery from '../ui/image-gallery'
+import BlocImageGallery from '../ui/bloc-image-gallery'
+import BlocContent from '../ui/bloc-content'
+
 import Link from '../ui/link'
 
 import Fade from 'react-reveal/Fade'
@@ -19,18 +17,17 @@ const CulinaryDelight = () => (
       <Row>
         <Col sm='12' md='6'>
           <Fade left>
-            <Content>
-              <Headline title='Delight' subtitle='Culinary' />
-              <HeadlineSeparator />
-              <LoremIpsum p={1} />
-              <Link text='Make a reservation' />
-            </Content>
+            <BlocContent
+              title='Delight'
+              subtitle='Culinary'
+              buttonText='Make a reservation'
+            />
           </Fade>
         </Col>
 
         <Col sm='12' md='6' className='my-auto'>
           <Fade right>
-            <ImageGallery
+            <BlocImageGallery
               images={['delight-group-1.jpg', 'delight-group-2.jpg']}
             />
           </Fade>
