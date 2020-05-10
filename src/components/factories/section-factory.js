@@ -9,7 +9,7 @@ import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
 
 import BlocFactory from './bloc-factory'
 
-const SectionFactory = ({ section, getImage }) => {
+const SectionFactory = ({ section }) => {
   switch (section.type) {
     case 'section-hero':
       return <SectionHero {...section.params} />
