@@ -32,7 +32,7 @@ const SectionHero = ({ title, subtitle, image, overlay }) => {
         </div>
         <div className={style.singleAnimation}>
           <h5>Ready to be opened</h5>
-          <Button text='Explore' onClick={goToHome} />
+          <Button onClick={goToHome}>Explore</Button>
         </div>
       </Container>
     </SectionParralax>

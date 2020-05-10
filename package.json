@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Emmanuel Tarrou <emmanuel.tarrou34@gmail.com>",
   "dependencies": {
-    "@bit/mcmanus68.ui-react.button": "0.0.3",
+    "@bit/mcmanus68.ui-react.button": "0.0.8",
     "@bit/mcmanus68.ui-react.headline": "0.0.1",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.21.21",
