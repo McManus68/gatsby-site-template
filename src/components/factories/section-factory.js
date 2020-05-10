@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Container, Row } from 'react-bootstrap'
-import Section from '../ui/section'
+import Section from '@bit/mcmanus68.ui-react.section'
 import SectionHeadline from '../ui/section-headline'
 import SectionHero from '../ui/section-hero'
 

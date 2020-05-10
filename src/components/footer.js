@@ -4,7 +4,7 @@ import { LoremIpsum } from 'react-lorem-ipsum'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import Content from './ui/content'
-import BackToTop from './ui/back-to-top'
+import BackToTop from '@bit/mcmanus68.ui-react.back-to-top'
 import HeadlineSeparator from './ui/headline-separator'
 
 import Fade from 'react-reveal/Fade'
@@ -25,7 +25,6 @@ const Footer = () => {
     <footer>
       <Container>
         <BackToTop />
-
         <Row>
           <Col>
             <Fade top>
