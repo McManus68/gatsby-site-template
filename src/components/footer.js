@@ -3,9 +3,9 @@ import { LoremIpsum } from 'react-lorem-ipsum'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
-import Content from './ui/content'
+import Content from '@bit/mcmanus68.ui-react.content'
 import BackToTop from '@bit/mcmanus68.ui-react.back-to-top'
-import HeadlineSeparator from './ui/headline-separator'
+import HeadlineSeparator from '@bit/mcmanus68.ui-react.headline-separator'
 
 import Fade from 'react-reveal/Fade'
 

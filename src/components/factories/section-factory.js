@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Container, Row } from 'react-bootstrap'
+
 import Section from '@bit/mcmanus68.ui-react.section'
-import SectionHeadline from '../ui/section-headline'
-import SectionHero from '../ui/section-hero'
+import SectionHeadline from '@bit/mcmanus68.ui-react.section-headline'
+import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
 
 import BlocFactory from './bloc-factory'
 

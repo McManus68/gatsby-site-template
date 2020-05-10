@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 
 import { Col } from 'react-bootstrap'
 
-import BlocImageGallery from '../ui/bloc-image-gallery'
-import BlocContent from '../ui/bloc-content'
+import BlocImageGallery from '@bit/mcmanus68.ui-react.bloc-image-gallery'
+import BlocSimpleContent from '@bit/mcmanus68.ui-react.bloc-simple-content'
 
 import AnimationFactory from './animation-factory'
 
 const BlocFactory = ({ bloc }) => {
   var content = (() => {
     switch (bloc.type) {
-      case 'bloc-content':
-        return <BlocContent {...bloc.params} />
-      case 'bloc-gallery':
+      case 'bloc-simple-content':
+        return <BlocSimpleContent {...bloc.params} />
+      case 'bloc-image-gallery':
         return <BlocImageGallery {...bloc.params} />
       default:
         return null

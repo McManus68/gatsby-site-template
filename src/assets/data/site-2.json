@@ -24,7 +24,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-content",
+                    "type": "bloc-simple-content",
                     "classes": "",
                     "responsive": {
                       "sm": 12,
@@ -44,7 +44,7 @@
                     }
                   },
                   {
-                    "type": "bloc-gallery",
+                    "type": "bloc-image-gallery",
                     "classes": "my-auto",
                     "responsive": {
                       "sm": 12,
@@ -80,7 +80,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-content",
+                    "type": "bloc-simple-content",
                     "classes": "",
                     "responsive": {
                       "sm": 12,
@@ -100,7 +100,7 @@
                     }
                   },
                   {
-                    "type": "bloc-gallery",
+                    "type": "bloc-image-gallery",
                     "classes": "my-auto",
                     "responsive": {
                       "sm": 12,
@@ -136,7 +136,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-content",
+                    "type": "bloc-simple-content",
                     "classes": "order-md-2",
                     "responsive": {
                       "sm": 12,
@@ -156,7 +156,7 @@
                     }
                   },
                   {
-                    "type": "bloc-gallery",
+                    "type": "bloc-image-gallery",
                     "classes": "my-auto order-md-1",
                     "responsive": {
                       "sm": 12,
