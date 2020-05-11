@@ -7,7 +7,7 @@ import Section from '@bit/mcmanus68.ui-react.section'
 import SectionHeadline from '@bit/mcmanus68.ui-react.section-headline'
 import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
 
-import BlocFactory from './bloc-factory'
+import BlockFactory from './block-factory'
 
 const SectionFactory = ({ section }) => {
   switch (section.type) {
@@ -25,7 +25,7 @@ const SectionFactory = ({ section }) => {
               return (
                 <Row key={i}>
                   {row.blocs.map((bloc, j) => {
-                    return <BlocFactory key={j} bloc={bloc} />
+                    return <BlockFactory key={j} bloc={bloc} />
                   })}
                 </Row>
               )
@@ -39,8 +39,8 @@ const SectionFactory = ({ section }) => {
   }
 }
 
+export default SectionFactory
+
 SectionFactory.propTypes = {
   section: PropTypes.object.isRequired,
 }
-
-export default SectionFactory

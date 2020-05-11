@@ -5,6 +5,10 @@ module.exports = {
     author: `@etarrou`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: { dbName: `site-generator`, collection: `sites` },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

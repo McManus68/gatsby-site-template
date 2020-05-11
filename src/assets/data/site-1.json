@@ -23,7 +23,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-simple-content",
+                    "type": "block-simple-content",
                     "classes": "",
                     "responsive": {
                       "sm": 12,
@@ -42,7 +42,7 @@
                     }
                   },
                   {
-                    "type": "bloc-image-gallery",
+                    "type": "block-image-gallery",
                     "classes": "my-auto",
                     "responsive": {
                       "sm": 12,
@@ -70,7 +70,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-simple-content",
+                    "type": "block-simple-content",
                     "classes": "order-md-2",
                     "responsive": {
                       "sm": 12,
@@ -83,7 +83,7 @@
                     }
                   },
                   {
-                    "type": "bloc-image-gallery",
+                    "type": "block-image-gallery",
                     "classes": "my-auto order-md-1",
                     "responsive": {
                       "sm": 12,
@@ -116,7 +116,7 @@
               {
                 "blocs": [
                   {
-                    "type": "bloc-simple-content",
+                    "type": "block-simple-content",
                     "classes": "",
                     "responsive": {
                       "sm": 12,
@@ -129,7 +129,7 @@
                     }
                   },
                   {
-                    "type": "bloc-image-gallery",
+                    "type": "block-image-gallery",
                     "classes": "my-auto",
                     "responsive": {
                       "sm": 12,
