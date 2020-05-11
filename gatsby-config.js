@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Site Template`,
@@ -5,10 +9,6 @@ module.exports = {
     author: `@etarrou`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-mongodb`,
-      options: { dbName: `site-generator`, collection: `sites` },
-    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,6 +45,13 @@ module.exports = {
       options: {
         name: `css`,
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-thirdparty`,
+      options: {
+        url: `${process.env.API_URL}`,
+        name: `toto`,
       },
     },
   ],
