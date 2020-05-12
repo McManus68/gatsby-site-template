@@ -21,7 +21,7 @@ export default ({ data }) => {
   dispatch(setImages(images))
 
   // Build dynamically each page - building it's section
-  const page = data.dataJson.site.pages[0]
+  const page = data.thirdPartyPages
   return (
     <Layout>
       <SEO title={page.title} description={page.description} />
@@ -34,52 +34,42 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    dataJson(
-      site: { pages: { elemMatch: { slug: { eq: $slug } } }, id: { eq: 2 } }
-    ) {
-      site {
-        pages {
-          slug
-          description
-          sections {
+    thirdPartyPages(slug: { eq: $slug }) {
+      slug
+      description
+      title
+      sections {
+        type
+        params {
+          title
+          subtitle
+          image
+          overlay
+        }
+        rows {
+          blocks {
+            classes
             type
+            responsive {
+              sm
+              md
+              lg
+              xl
+            }
             params {
               title
               subtitle
-              image
-              overlay
+              buttonText
+              images
             }
-            rows {
-              blocs {
-                classes
-                type
-                responsive {
-                  sm
-                  md
-                  lg
-                  xl
-                }
-                params {
-                  title
-                  subtitle
-                  buttonText
-                  images
-                }
-                animation {
-                  type
-                  params {
-                    left
-                    right
-                    delay
-                  }
-                }
-              }
+            animation {
+              type
+              left
+              right
+              delay
             }
           }
-          title
         }
-        description
-        title
       }
     }
     allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {

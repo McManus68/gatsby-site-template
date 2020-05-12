@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import { useSelector, useDispatch } from 'react-redux'
 import { setNavOpen, setNavItem } from '../state'
 
@@ -37,9 +38,12 @@ const Nav = ({ items }) => {
                 navItem === item ? style.active : ''
               }`}
             >
-              <a href='#home' onClick={() => dispatch(setNavItem(item))}>
-                {item}
-              </a>
+              <Link
+                to={'/' + item.slug}
+                onClick={() => dispatch(setNavItem(item))}
+              >
+                {item.title}
+              </Link>
             </li>
           )
         })}

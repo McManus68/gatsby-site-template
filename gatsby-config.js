@@ -50,8 +50,15 @@ module.exports = {
     {
       resolve: `gatsby-source-thirdparty`,
       options: {
-        url: `${process.env.API_URL}`,
-        name: `toto`,
+        url: `${process.env.API_URL}/${process.env.SITE_ID}/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-thirdparty`,
+      options: {
+        url: `${process.env.API_URL}/${process.env.SITE_ID}/info`,
+        name: `siteInfo`,
       },
     },
   ],

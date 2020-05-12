@@ -24,8 +24,8 @@ const SectionFactory = ({ section }) => {
             {section.rows.map((row, i) => {
               return (
                 <Row key={i}>
-                  {row.blocs.map((bloc, j) => {
-                    return <BlockFactory key={j} bloc={bloc} />
+                  {row.blocks.map((block, j) => {
+                    return <BlockFactory key={j} block={block} />
                   })}
                 </Row>
               )

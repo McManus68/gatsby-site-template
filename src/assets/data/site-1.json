@@ -1,6 +1,7 @@
 {
   "site": {
     "id": 1,
+    "name": "SITE_SHOWCASE1",
     "title": "Peak St Loup Delights",
     "description": "Best meals of The Languedoc",
     "pages": [

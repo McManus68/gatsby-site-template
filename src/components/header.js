@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Container } from 'react-bootstrap'
 
@@ -6,8 +7,7 @@ import Nav from './nav'
 
 import './header.module.scss'
 
-const Header = ({ title }) => {
-  const items = ['Home', 'Menu', 'Reservation', 'Contact']
+const Header = ({ items }) => {
   return (
     <header>
       <Container>
@@ -18,3 +18,7 @@ const Header = ({ title }) => {
 }
 
 export default Header
+
+Header.propTypes = {
+  items: PropTypes.array.isRequired,
+}

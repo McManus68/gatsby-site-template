@@ -7,9 +7,9 @@ import Reveal from 'react-reveal/Reveal'
 const AnimationFactory = ({ animation, children }) => {
   switch (animation.type) {
     case 'fade':
-      return <Fade {...animation.params}>{children}</Fade>
+      return <Fade {...animation}>{children}</Fade>
     case 'reveal':
-      return <Reveal {...animation.params}>{children}</Reveal>
+      return <Reveal {...animation}>{children}</Reveal>
     default:
       return ''
   }
