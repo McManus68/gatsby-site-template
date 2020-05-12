@@ -45,12 +45,15 @@ module.exports = {
 }
 
 // REMOTE VERSION - We fetch the date via an external API
+
 if (process.env.SERVER === 'REMOTE') {
   module.exports.plugins.push({
     resolve: `gatsby-source-thirdparty`,
     options: {
       url: `${process.env.API_URL}/${process.env.SITE_ID}/pages`,
       name: `pages`,
+      localSave: true,
+      path: `${__dirname}/src/assets/data/`,
     },
   })
 
@@ -59,6 +62,8 @@ if (process.env.SERVER === 'REMOTE') {
     options: {
       url: `${process.env.API_URL}/${process.env.SITE_ID}/info`,
       name: `siteInfo`,
+      localSave: true,
+      path: `${__dirname}/src/assets/data/`,
     },
   })
 }

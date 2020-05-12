@@ -11,13 +11,13 @@ import BlockFactory from './block-factory'
 
 const SectionFactory = ({ section }) => {
   switch (section.type) {
-    case 'section-hero':
+    case 'HERO':
       return <SectionHero {...section.params} />
 
-    case 'section-headline':
+    case 'HEADLINE':
       return <SectionHeadline {...section.params} />
 
-    case 'section-custom':
+    case 'CUSTOM':
       return (
         <Section>
           <Container>

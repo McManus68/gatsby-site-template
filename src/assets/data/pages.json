@@ -5,7 +5,7 @@
     "description": "Home page",
     "sections": [
       {
-        "type": "section-hero",
+        "type": "HERO",
         "params": {
           "title": "The Rosa",
           "subtitle": "Welcome",
@@ -14,7 +14,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -46,7 +46,9 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-our-story.jpg"]
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -61,7 +63,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Tasteful",
           "subtitle": "Recipes",
@@ -70,7 +72,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -115,7 +117,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Blend",
           "subtitle": "The perfect",
@@ -124,7 +126,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -149,7 +151,10 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-delight1.jpg", "theme1-delight2.jpg"]
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -171,7 +176,7 @@
     "description": "Services",
     "sections": [
       {
-        "type": "section-hero",
+        "type": "HERO",
         "params": {
           "title": "McManus & Cie",
           "subtitle": "Salon",
@@ -181,7 +186,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -213,7 +218,9 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-our-story.jpg"]
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -228,7 +235,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Tasteful",
           "subtitle": "Recipes",
@@ -237,7 +244,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -282,7 +289,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Blend",
           "subtitle": "The perfect",
@@ -291,7 +298,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -316,7 +323,10 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-delight1.jpg", "theme1-delight2.jpg"]
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -338,7 +348,7 @@
     "description": "Home page",
     "sections": [
       {
-        "type": "section-hero",
+        "type": "HERO",
         "params": {
           "title": "McManus & Cie",
           "subtitle": "Salon",
@@ -348,7 +358,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -380,7 +390,10 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme2-girls1.jpg", "theme2-girls2.jpg"]
+                  "images": [
+                    "theme2-girls1.jpg",
+                    "theme2-girls2.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -402,7 +415,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Style",
           "subtitle": "Improve your",
@@ -412,7 +425,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -444,7 +457,9 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme2-barbers1.jpg"]
+                  "images": [
+                    "theme2-barbers1.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -466,7 +481,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Team",
           "subtitle": "Experimented",
@@ -476,7 +491,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -542,7 +557,7 @@
     "description": "Contact",
     "sections": [
       {
-        "type": "section-hero",
+        "type": "HERO",
         "params": {
           "title": "The Rosa",
           "subtitle": "Welcome",
@@ -551,7 +566,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -583,7 +598,9 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-our-story.jpg"]
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -598,7 +615,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Tasteful",
           "subtitle": "Recipes",
@@ -607,7 +624,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -652,7 +669,7 @@
         ]
       },
       {
-        "type": "section-headline",
+        "type": "HEADLINE",
         "params": {
           "title": "Blend",
           "subtitle": "The perfect",
@@ -661,7 +678,7 @@
         "rows": null
       },
       {
-        "type": "section-custom",
+        "type": "CUSTOM",
         "params": null,
         "rows": [
           {
@@ -686,7 +703,10 @@
                 "type": "block-image-gallery",
                 "classes": "my-auto",
                 "params": {
-                  "images": ["theme1-delight1.jpg", "theme1-delight2.jpg"]
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
