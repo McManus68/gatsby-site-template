@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allThirdPartyPages {
+      pages: allThirdPartyPages {
         nodes {
           slug
         }
@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allThirdPartyPages.nodes.forEach(page => {
+  result.data.pages.nodes.forEach(page => {
     createPage({
       path: page.slug,
       component: path.resolve(`./src/templates/page.js`),

@@ -8,14 +8,8 @@ module.exports = {
     description: `A Template for Creating Gatsby Sites`,
     author: `@etarrou`,
   },
+
   plugins: [
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/assets/data/`,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,19 +41,35 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    {
-      resolve: `gatsby-source-thirdparty`,
-      options: {
-        url: `${process.env.API_URL}/${process.env.SITE_ID}/pages`,
-        name: `pages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-thirdparty`,
-      options: {
-        url: `${process.env.API_URL}/${process.env.SITE_ID}/info`,
-        name: `siteInfo`,
-      },
-    },
   ],
+}
+
+// REMOTE VERSION - We fetch the date via an external API
+if (process.env.SERVER === 'REMOTE') {
+  module.exports.plugins.push({
+    resolve: `gatsby-source-thirdparty`,
+    options: {
+      url: `${process.env.API_URL}/${process.env.SITE_ID}/pages`,
+      name: `pages`,
+    },
+  })
+
+  module.exports.plugins.push({
+    resolve: `gatsby-source-thirdparty`,
+    options: {
+      url: `${process.env.API_URL}/${process.env.SITE_ID}/info`,
+      name: `siteInfo`,
+    },
+  })
+}
+
+// LOCAL VERSION - We use local JSON data files
+else {
+  module.exports.plugins.push(`gatsby-transformer-json`)
+  module.exports.plugins.push({
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `./src/assets/data/`,
+    },
+  })
 }

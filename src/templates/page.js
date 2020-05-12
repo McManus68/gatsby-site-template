@@ -21,7 +21,7 @@ export default ({ data }) => {
   dispatch(setImages(images))
 
   // Build dynamically each page - building it's section
-  const page = data.thirdPartyPages
+  const page = data.page
   return (
     <Layout>
       <SEO title={page.title} description={page.description} />
@@ -34,7 +34,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    thirdPartyPages(slug: { eq: $slug }) {
+    page: thirdPartyPages(slug: { eq: $slug }) {
       slug
       description
       title

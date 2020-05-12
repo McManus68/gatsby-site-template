@@ -8,7 +8,7 @@ import Footer from './footer'
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query Menus {
-      allThirdPartyPages {
+      pages: allThirdPartyPages {
         nodes {
           slug
           title
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header items={data.allThirdPartyPages.nodes} />
+      <Header items={data.pages.nodes} />
       <main>{children}</main>
       <Footer />
     </>
