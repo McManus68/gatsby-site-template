@@ -64,9 +64,9 @@ export const query = graphql`
             }
             animation {
               type
+              delay
               left
               right
-              delay
             }
           }
         }

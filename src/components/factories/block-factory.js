@@ -11,16 +11,17 @@ import AnimationFactory from './animation-factory'
 const BlockFactory = ({ block }) => {
   var content = (() => {
     switch (block.type) {
-      case 'block-simple-content':
+      case 'BLOCK_SIMPLE_CONTENT':
         return <BlockSimpleContent {...block.params} />
-      case 'block-image-gallery':
+      case 'BLOCK_GALLERY':
         return <BlockImageGallery {...block.params} />
       default:
         return null
     }
   })()
 
-  if (block.animation) {
+  if (block.animation && block.animation.active) {
+    console.log('ANIMATION')
     content = (
       <AnimationFactory animation={block.animation}>{content}</AnimationFactory>
     )
