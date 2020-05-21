@@ -1,26 +1,16 @@
 [
   {
-    "title": "TEST",
-    "slug": "TEST",
+    "title": "HomeX",
+    "slug": "home",
     "description": "Home page",
     "sections": [
       {
         "type": "SECTION_HERO",
         "params": {
-          "title": "test",
-          "subtitle": "teddssdd",
-          "image": "theme2-hero.jpg",
+          "title": "The Rosa",
+          "subtitle": "Welcome",
+          "image": "theme1-hero.jpg",
           "overlay": ""
-        },
-        "rows": []
-      },
-      {
-        "type": "SECTION_HEADLINE",
-        "params": {
-          "title": "gribunus",
-          "subtitle": "dksldskdl",
-          "image": "theme2-services3.jpg",
-          "overlay": "rgba(0,0,0,0.7)"
         },
         "rows": []
       },
@@ -35,9 +25,736 @@
                 "type": "BLOCK_SIMPLE_CONTENT",
                 "classes": "",
                 "params": {
+                  "title": "Discover",
+                  "subtitle": "Our Story",
+                  "buttonText": "aboutUs"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "reveal",
+                  "delay": 200,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Tasteful",
+          "subtitle": "Recipes",
+          "image": "theme1-tasteful-recipes.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "order-md-2",
+                "params": {
                   "title": "Menu",
                   "subtitle": "Discover",
-                  "buttonText": "dsdsdsdds"
+                  "buttonText": "View the full menu"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto order-md-1",
+                "params": {
+                  "images": [
+                    "theme1-menu1.jpg",
+                    "theme1-menu2.jpg",
+                    "theme1-menu3.jpg",
+                    "theme1-menu4.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Blend",
+          "subtitle": "The perfect",
+          "image": "theme1-perfect-blend.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Delight",
+                  "subtitle": "Culinary",
+                  "buttonText": "Make a reservation"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6,
+                  "xl": 6
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Services",
+    "slug": "services",
+    "description": "Services",
+    "sections": [
+      {
+        "type": "SECTION_HERO",
+        "params": {
+          "title": "McManus & Cie",
+          "subtitle": "Salon",
+          "image": "theme2-hero.jpg",
+          "overlay": "rgba(0, 0, 0, 0.8)"
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Discover",
+                  "subtitle": "Our Story",
+                  "buttonText": "aboutUs"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "reveal",
+                  "delay": 200,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Tasteful",
+          "subtitle": "Recipes",
+          "image": "theme1-tasteful-recipes.jpg",
+          "overlay": "rgba(0, 0, 0, 0.8)"
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "order-md-2",
+                "params": {
+                  "title": "Menu",
+                  "subtitle": "Discover",
+                  "buttonText": "View the full menu"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto order-md-1",
+                "params": {
+                  "images": [
+                    "theme1-menu1.jpg",
+                    "theme1-menu2.jpg",
+                    "theme1-menu3.jpg",
+                    "theme1-menu4.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Blend",
+          "subtitle": "The perfect",
+          "image": "theme1-perfect-blend.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Delight",
+                  "subtitle": "Culinary",
+                  "buttonText": "Make a reservation"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": null
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6,
+                  "xl": 6
+                },
+                "animation": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Productx",
+    "slug": "products",
+    "description": "Home page",
+    "sections": [
+      {
+        "type": "SECTION_HERO",
+        "params": {
+          "title": "McManus & Cie",
+          "subtitle": "Salon",
+          "image": "theme2-hero.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Girls",
+                  "subtitle": "For",
+                  "buttonText": "Make a reservation"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 300,
+                  "left": true,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme2-girls1.jpg",
+                    "theme2-girls2.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 600,
+                  "left": false,
+                  "right": true,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Style",
+          "subtitle": "Improve your",
+          "image": "theme2-style.jpg",
+          "overlay": "rgba(0, 0, 0, 0.8)"
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Meet",
+                  "subtitle": "Our Barbers",
+                  "buttonText": "Book an Appointment"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 300,
+                  "left": true,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme2-barbers1.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 600,
+                  "left": false,
+                  "right": true,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Team",
+          "subtitle": "Experimented",
+          "image": "theme2-experience.jpg",
+          "overlay": "rgba(0, 0, 0, 0.8)"
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "order-md-2",
+                "params": {
+                  "title": "Menu",
+                  "subtitle": "Discover",
+                  "buttonText": "View the full menu"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 600,
+                  "left": false,
+                  "right": true,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto order-md-1",
+                "params": {
+                  "images": [
+                    "theme2-services1.jpg",
+                    "theme2-services2.jpg",
+                    "theme2-services3.jpg",
+                    "theme2-services4.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "fade",
+                  "delay": 300,
+                  "left": true,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "xContact",
+    "slug": "contact",
+    "description": "Contact",
+    "sections": [
+      {
+        "type": "SECTION_HERO",
+        "params": {
+          "title": "The Rosa",
+          "subtitle": "Welcome",
+          "image": "theme1-hero.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Discover",
+                  "subtitle": "Our Story",
+                  "buttonText": "about Us"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "reveal",
+                  "delay": 200,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-our-story.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "",
+                  "delay": 0,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Tasteful",
+          "subtitle": "Recipes",
+          "image": "theme1-tasteful-recipes.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "order-md-2",
+                "params": {
+                  "title": "Menu",
+                  "subtitle": "Discover",
+                  "buttonText": "View the full menu"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "",
+                  "delay": 0,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto order-md-1",
+                "params": {
+                  "images": [
+                    "theme1-menu1.jpg",
+                    "theme1-menu2.jpg",
+                    "theme1-menu3.jpg",
+                    "theme1-menu4.jpg"
+                  ]
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "",
+                  "delay": 0,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "title": "Blend",
+          "subtitle": "The perfect",
+          "image": "theme1-perfect-blend.jpg",
+          "overlay": ""
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {},
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Delight",
+                  "subtitle": "Culinary",
+                  "buttonText": "Make a reservation"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": null,
+                  "xl": null
+                },
+                "animation": {
+                  "type": "",
+                  "delay": 0,
+                  "left": false,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "my-auto",
+                "params": {
+                  "images": [
+                    "theme1-delight1.jpg",
+                    "theme1-delight2.jpg"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -46,12 +763,61 @@
                   "xl": 6
                 },
                 "animation": {
-                  "active": null,
-                  "type": "fade",
-                  "delay": 300,
+                  "type": "",
+                  "delay": 0,
                   "left": false,
                   "right": false,
-                  "top": true,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "DUMMY_PAGE",
+    "slug": "slug",
+    "description": "description",
+    "sections": [
+      {
+        "type": "SECTION_CUSTOM",
+        "params": {
+          "title": "t",
+          "subtitle": "s",
+          "image": "i",
+          "overlay": "o"
+        },
+        "rows": [
+          {
+            "type": "row",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "classes",
+                "params": {
+                  "title": "t",
+                  "subtitle": "s",
+                  "buttonText": "b",
+                  "images": [
+                    "img1",
+                    "img2"
+                  ]
+                },
+                "responsive": {
+                  "sm": 4,
+                  "md": 4,
+                  "lg": 4,
+                  "xl": 4
+                },
+                "animation": {
+                  "type": "",
+                  "delay": 0,
+                  "left": false,
+                  "right": false,
+                  "top": false,
                   "bottom": false
                 }
               }

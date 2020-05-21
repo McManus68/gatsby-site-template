@@ -8,7 +8,7 @@ import Footer from './footer'
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query Menus {
-      pages: allThirdPartyPages {
+      pages: allThirdPartyPages(filter: { title: { ne: "DUMMY_PAGE" } }) {
         nodes {
           slug
           title

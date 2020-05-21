@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      pages: allThirdPartyPages {
+      pages: allThirdPartyPages(filter: { title: { ne: "DUMMY_PAGE" } }) {
         nodes {
           slug
         }
