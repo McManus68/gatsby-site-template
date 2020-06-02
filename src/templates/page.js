@@ -61,6 +61,7 @@ export const query = graphql`
               subtitle
               buttonText
               images
+              display
             }
             animation {
               type

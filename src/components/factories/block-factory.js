@@ -21,13 +21,12 @@ const BlockFactory = ({ block }) => {
   })()
 
   if (block.animation && block.animation.active) {
-    console.log('ANIMATION')
     content = (
       <AnimationFactory animation={block.animation}>{content}</AnimationFactory>
     )
   }
   return (
-    <Col className={block.classes} {...block.responsive}>
+    <Col className={`${block.classes} my-auto`} {...block.responsive}>
       {content}
     </Col>
   )

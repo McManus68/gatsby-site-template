@@ -15,7 +15,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        path: `${process.env.IMAGES_PATH}/${process.env.SITE_ID}`,
+        ignore: `${process.env.IMAGES_PATH}/${process.env.SITE_ID}/thumbnail/*`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -39,13 +40,6 @@ module.exports = {
       options: {
         name: `css`,
         path: `${__dirname}/src/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `/Users/Mc/Desktop/test`,
       },
     },
   ],
