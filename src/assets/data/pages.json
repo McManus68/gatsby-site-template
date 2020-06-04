@@ -1,15 +1,103 @@
 [
   {
     "title": "Home",
-    "slug": "home",
-    "description": "Home page",
+    "slug": "/home",
+    "description": "Homepage",
     "sections": [
       {
         "type": "SECTION_HERO",
         "params": {
-          "title": "Explore",
-          "subtitle": "Outer World",
-          "image": "photo-of-constellation-2832084.jpg",
+          "image": "chocolate-beside-raspberry-918328.jpg",
+          "overlay": "rgba(0,0,0,0.8)",
+          "title": "Chocolate",
+          "subtitle": "World Of"
+        },
+        "rows": []
+      },
+      {
+        "type": "SECTION_CUSTOM",
+        "params": null,
+        "rows": [
+          {
+            "type": "ROW",
+            "blocks": [
+              {
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
+                "params": {
+                  "title": "Desserts",
+                  "subtitle": "Tasteful",
+                  "buttonText": "Taste"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6,
+                  "xl": 6
+                },
+                "animation": {
+                  "type": "FADE",
+                  "delay": 200,
+                  "left": true,
+                  "right": false,
+                  "top": false,
+                  "bottom": false
+                }
+              },
+              {
+                "type": "BLOCK_GALLERY",
+                "classes": "",
+                "params": {
+                  "images": [
+                    "chocolate-cake-on-white-ceramic-plate-3740237.jpg",
+                    "selective-focus-photo-of-three-macaroons-940872.jpg",
+                    "food-plate-chocolate-dessert-132694.jpg",
+                    "stacked-three-macaroons-2014693.jpg"
+                  ],
+                  "display": "Square"
+                },
+                "responsive": {
+                  "sm": 12,
+                  "md": 6,
+                  "lg": 6,
+                  "xl": 6
+                },
+                "animation": {
+                  "type": "FADE",
+                  "delay": 400,
+                  "left": false,
+                  "right": true,
+                  "top": false,
+                  "bottom": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "SECTION_HEADLINE",
+        "params": {
+          "image": "selective-focus-photo-of-sliced-cake-on-table-960540.jpg",
+          "title": "Join Us",
+          "subtitle": "Hurry",
+          "overlay": "rgba(0,0,0,0.65)"
+        },
+        "rows": []
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "slug": "/contact",
+    "description": "Contact page",
+    "sections": [
+      {
+        "type": "SECTION_HERO",
+        "params": {
+          "image": "milk-chocolates-1854664.jpg",
+          "title": "The Rosa",
+          "subtitle": "Test",
           "overlay": "rgba(0,0,0,0.8)"
         },
         "rows": []
@@ -22,53 +110,51 @@
             "type": "ROW",
             "blocks": [
               {
-                "type": "BLOCK_SIMPLE_CONTENT",
+                "type": "BLOCK_GALLERY",
                 "classes": "",
                 "params": {
-                  "title": "Book Ur Trip",
-                  "subtitle": "Be Ready",
-                  "buttonText": "Book"
+                  "images": [
+                    "food-photography-of-a-baked-cake-on-white-ceramic-palte-691147.jpg",
+                    "shallow-focus-photo-of-a-doughnut-3031205.jpg"
+                  ],
+                  "display": "Horizontal"
                 },
                 "responsive": {
                   "sm": 12,
                   "md": 6,
-                  "lg": null,
-                  "xl": null
+                  "lg": 6,
+                  "xl": 6
                 },
                 "animation": {
-                  "type": "",
-                  "delay": 0,
-                  "left": false,
+                  "type": "ROTATE",
+                  "delay": 200,
+                  "left": true,
                   "right": false,
                   "top": false,
                   "bottom": false
                 }
               },
               {
-                "type": "BLOCK_GALLERY",
-                "classes": "my-auto",
+                "type": "BLOCK_SIMPLE_CONTENT",
+                "classes": "",
                 "params": {
-                  "display": "Vertical",
-                  "images": [
-                    "red-and-orange-solar-flare-73873.jpg",
-                    "gray-and-white-robot-73910.jpg",
-                    "aerial-view-atmosphere-clouds-cold-front-76969.jpg",
-                    "earth-space-cosmos-5439.jpg"
-                  ]
+                  "title": "Miam",
+                  "subtitle": "Delicious",
+                  "buttonText": "Try it"
                 },
                 "responsive": {
                   "sm": 12,
                   "md": 6,
-                  "lg": null,
-                  "xl": null
+                  "lg": 6,
+                  "xl": 6
                 },
                 "animation": {
-                  "type": "",
-                  "delay": 0,
+                  "type": "PULSE",
+                  "delay": 400,
                   "left": false,
                   "right": false,
                   "top": false,
-                  "bottom": false
+                  "bottom": true
                 }
               }
             ]
@@ -78,156 +164,12 @@
       {
         "type": "SECTION_HEADLINE",
         "params": {
-          "title": "Visit Mars",
-          "subtitle": "Promo ",
-          "image": "astronaut-standing-beside-american-flag-on-the-moon-39896.jpg",
-          "overlay": "rgba(17,14,33,0.89)"
+          "image": "bright-candies-chocolate-close-up-443419.jpg",
+          "title": "Candys",
+          "subtitle": "Sugar",
+          "overlay": "rgba(0,0,0,0.65)"
         },
         "rows": []
-      },
-      {
-        "type": "SECTION_CUSTOM",
-        "params": null,
-        "rows": [
-          {
-            "type": "ROW",
-            "blocks": [
-              {
-                "type": "BLOCK_GALLERY",
-                "classes": "my-auto",
-                "params": {
-                  "display": "Horizontal",
-                  "images": [
-                    "red-and-orange-solar-flare-73873.jpg",
-                    "photo-of-constellation-2832084.jpg"
-                  ]
-                },
-                "responsive": {
-                  "sm": 12,
-                  "md": 6,
-                  "lg": null,
-                  "xl": null
-                },
-                "animation": {
-                  "type": "",
-                  "delay": 0,
-                  "left": false,
-                  "right": false,
-                  "top": false,
-                  "bottom": false
-                }
-              },
-              {
-                "type": "BLOCK_SIMPLE_CONTENT",
-                "classes": "",
-                "params": {
-                  "title": "Go with ur family",
-                  "subtitle": "Hey",
-                  "buttonText": "Visit"
-                },
-                "responsive": {
-                  "sm": 12,
-                  "md": 6,
-                  "lg": null,
-                  "xl": null
-                },
-                "animation": {
-                  "type": "",
-                  "delay": 0,
-                  "left": false,
-                  "right": false,
-                  "top": false,
-                  "bottom": false
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "SECTION_HEADLINE",
-        "params": {
-          "title": "Yeag",
-          "subtitle": "Cpme one",
-          "image": "white-sky-1040473.jpg",
-          "overlay": "rgba(28,31,25,0.85)"
-        },
-        "rows": []
-      }
-    ]
-  },
-  {
-    "title": "Contact",
-    "slug": "contact",
-    "description": "Contact page",
-    "sections": [
-      {
-        "type": "SECTION_HERO",
-        "params": {
-          "title": "Contact",
-          "subtitle": "Ur Mom",
-          "image": "gray-and-white-robot-73910.jpg",
-          "overlay": "rgba(0,0,0,0.9)"
-        },
-        "rows": []
-      },
-      {
-        "type": "SECTION_CUSTOM",
-        "params": null,
-        "rows": [
-          {
-            "type": "ROW",
-            "blocks": [
-              {
-                "type": "BLOCK_SIMPLE_CONTENT",
-                "classes": "",
-                "params": {
-                  "title": "Hey you",
-                  "subtitle": "Coucou",
-                  "buttonText": "Hibou"
-                },
-                "responsive": {
-                  "sm": 12,
-                  "md": 6,
-                  "lg": null,
-                  "xl": null
-                },
-                "animation": {
-                  "type": "",
-                  "delay": 0,
-                  "left": false,
-                  "right": false,
-                  "top": false,
-                  "bottom": false
-                }
-              },
-              {
-                "type": "BLOCK_GALLERY",
-                "classes": "",
-                "params": {
-                  "display": "",
-                  "images": [
-                    "white-sky-1040473.jpg"
-                  ]
-                },
-                "responsive": {
-                  "sm": 12,
-                  "md": 6,
-                  "lg": null,
-                  "xl": null
-                },
-                "animation": {
-                  "type": "",
-                  "delay": 0,
-                  "left": false,
-                  "right": false,
-                  "top": false,
-                  "bottom": false
-                }
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -242,7 +184,8 @@
           "title": "t",
           "subtitle": "s",
           "image": "i",
-          "overlay": "o"
+          "overlay": "o",
+          "display": "Square"
         },
         "rows": [
           {

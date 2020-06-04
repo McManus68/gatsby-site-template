@@ -38,10 +38,7 @@ const Nav = ({ items }) => {
                 navItem === item ? style.active : ''
               }`}
             >
-              <Link
-                to={'/' + item.slug}
-                onClick={() => dispatch(setNavItem(item))}
-              >
+              <Link to={item.slug} onClick={() => dispatch(setNavItem(item))}>
                 {item.title}
               </Link>
             </li>
