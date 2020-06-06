@@ -1,19 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import { Container } from 'react-bootstrap'
-
+import { useStaticQuery, graphql } from 'gatsby'
 import Nav from './nav'
+import styled from 'styled-components'
 
-import './header.module.scss'
+const StyledHeader = styled.header`
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+`
 
-const Header = ({ items }) => {
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query Menus {
+      pages: allThirdPartyPages(filter: { title: { ne: "DUMMY_PAGE" } }) {
+        nodes {
+          slug
+          title
+        }
+      }
+    }
+  `)
+
   return (
-    <header>
+    <StyledHeader>
       <Container>
-        <Nav items={items} />
+        <Nav items={data.pages.nodes} />
       </Container>
-    </header>
+    </StyledHeader>
   )
 }
 

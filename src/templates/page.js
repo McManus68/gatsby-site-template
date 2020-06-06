@@ -1,12 +1,10 @@
 import React from 'react'
-
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-import { setImages } from '../state'
+import { setImages } from '../redux'
 import { useDispatch } from 'react-redux'
-
+//import Responsive from '../graphql/responsive-fragment'
 import SectionFactory from '../components/factories/section-factory'
 
 export default ({ data }) => {
@@ -25,9 +23,9 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={page.title} description={page.description} />
-      {page.sections.map((section, i) => {
-        return <SectionFactory key={i} section={section} />
-      })}
+      {page.sections.map((section, i) => (
+        <SectionFactory key={i} section={section} />
+      ))}
     </Layout>
   )
 }

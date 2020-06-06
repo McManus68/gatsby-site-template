@@ -1,38 +1,58 @@
 import React from 'react'
-
-import { Container, Row, Col } from 'react-bootstrap'
-
-import Content from '@bit/mcmanus68.ui-react.content'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Container } from 'react-bootstrap'
 import BackToTop from '@bit/mcmanus68.ui-react.back-to-top'
+import RowFactory from '../components/factories/row-factory'
+import styled from 'styled-components'
 
-import FooterSimpleContent from '@bit/mcmanus68.ui-react.footer-simple-content'
-import FooterSocial from '@bit/mcmanus68.ui-react.footer-social'
-import FooterNewsletter from '@bit/mcmanus68.ui-react.footer-newsletter'
-
-import style from './footer.module.scss'
+const StyledFooter = styled.footer`
+  background-color: ${props => props.theme.footer.bg};
+  color: ${props => props.theme.footer.color};
+  text-align: center;
+  position: relative;
+`
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query Footer {
+      site: thirdPartySiteInfo {
+        footer {
+          type
+          rows {
+            blocks {
+              classes
+              type
+              responsive {
+                sm
+                md
+                lg
+                xl
+              }
+              params {
+                title
+              }
+              animation {
+                type
+                delay
+                left
+                right
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
-    <footer>
+    <StyledFooter>
       <Container>
         <BackToTop />
-        <Row>
-          <Col>
-            <FooterSimpleContent />
-          </Col>
-        </Row>
-
-        <Row>
-          <Col md='6'>
-            <FooterSocial />
-          </Col>
-
-          <Col md='6'>
-            <FooterNewsletter />
-          </Col>
-        </Row>
+        {data.site.footer.rows.map((row, i) => (
+          <RowFactory key={i} row={row} />
+        ))}
       </Container>
-    </footer>
+    </StyledFooter>
   )
 }
 

@@ -12,7 +12,7 @@ const theme = {
   },
   footer: {
     bg: '#121212',
-    font: '#fff',
+    color: '#fff',
   },
   block: {
     padding: '2.4rem',

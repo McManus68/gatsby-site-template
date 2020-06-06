@@ -60,7 +60,7 @@
           {
             "type": "FOOTER_NEWSLETTER",
             "classes": "",
-            "params": {},
+            "params": null,
             "responsive": {
               "sm": 12,
               "md": 6,
