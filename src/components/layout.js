@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
 
+import Theme from '../themes/theme-default'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query Menus {
@@ -18,11 +20,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Theme>
       <Header items={data.pages.nodes} />
       <main>{children}</main>
       <Footer />
-    </>
+    </Theme>
   )
 }
 

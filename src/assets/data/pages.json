@@ -7,10 +7,10 @@
       {
         "type": "SECTION_HERO",
         "params": {
-          "image": "chocolate-beside-raspberry-918328.jpg",
-          "overlay": "rgba(0,0,0,0.8)",
           "title": "Chocolate",
-          "subtitle": "World Of"
+          "subtitle": "World Of",
+          "image": "chocolate-beside-raspberry-918328.jpg",
+          "overlay": "rgba(0,0,0,0.8)"
         },
         "rows": []
       },
@@ -48,13 +48,13 @@
                 "type": "BLOCK_GALLERY",
                 "classes": "",
                 "params": {
+                  "display": "Square",
                   "images": [
                     "chocolate-cake-on-white-ceramic-plate-3740237.jpg",
                     "selective-focus-photo-of-three-macaroons-940872.jpg",
                     "food-plate-chocolate-dessert-132694.jpg",
                     "stacked-three-macaroons-2014693.jpg"
-                  ],
-                  "display": "Square"
+                  ]
                 },
                 "responsive": {
                   "sm": 12,
@@ -78,9 +78,9 @@
       {
         "type": "SECTION_HEADLINE",
         "params": {
-          "image": "selective-focus-photo-of-sliced-cake-on-table-960540.jpg",
           "title": "Join Us",
           "subtitle": "Hurry",
+          "image": "selective-focus-photo-of-sliced-cake-on-table-960540.jpg",
           "overlay": "rgba(0,0,0,0.65)"
         },
         "rows": []

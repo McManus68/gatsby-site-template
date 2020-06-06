@@ -3,5 +3,81 @@
   "name": "Chocolate",
   "title": "Chocolate",
   "description": "",
-  "pages": []
+  "pages": [],
+  "footer": {
+    "type": "FOOTER",
+    "rows": [
+      {
+        "type": "ROW",
+        "blocks": [
+          {
+            "type": "FOOTER_SIMPLE_CONTENT",
+            "classes": "",
+            "params": {
+              "title": "About Us"
+            },
+            "responsive": {
+              "sm": 12,
+              "md": 12,
+              "lg": 12,
+              "xl": 12
+            },
+            "animation": {
+              "type": "",
+              "delay": 0,
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false
+            }
+          }
+        ]
+      },
+      {
+        "type": "ROW",
+        "blocks": [
+          {
+            "type": "FOOTER_SOCIAL",
+            "classes": "",
+            "params": {
+              "title": "Follow Us"
+            },
+            "responsive": {
+              "sm": 12,
+              "md": 6,
+              "lg": 6,
+              "xl": 6
+            },
+            "animation": {
+              "type": "",
+              "delay": 0,
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false
+            }
+          },
+          {
+            "type": "FOOTER_NEWSLETTER",
+            "classes": "",
+            "params": {},
+            "responsive": {
+              "sm": 12,
+              "md": 6,
+              "lg": 6,
+              "xl": 6
+            },
+            "animation": {
+              "type": "",
+              "delay": 0,
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
