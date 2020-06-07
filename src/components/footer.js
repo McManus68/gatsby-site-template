@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { Container } from 'react-bootstrap'
 import BackToTop from '@bit/mcmanus68.ui-react.back-to-top'
 import RowFactory from '../components/factories/row-factory'
@@ -12,43 +12,12 @@ const StyledFooter = styled.footer`
   position: relative;
 `
 
-const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query Footer {
-      site: thirdPartySiteInfo {
-        footer {
-          type
-          rows {
-            blocks {
-              classes
-              type
-              responsive {
-                sm
-                md
-                lg
-                xl
-              }
-              params {
-                title
-              }
-              animation {
-                type
-                delay
-                left
-                right
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
+const Footer = ({ footer }) => {
   return (
     <StyledFooter>
       <Container>
         <BackToTop />
-        {data.site.footer.rows.map((row, i) => (
+        {footer.rows.map((row, i) => (
           <RowFactory key={i} row={row} />
         ))}
       </Container>
@@ -57,3 +26,7 @@ const Footer = () => {
 }
 
 export default Footer
+
+Footer.propTypes = {
+  footer: PropTypes.object.isRequired,
+}

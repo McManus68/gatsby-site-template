@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { useSelector, useDispatch } from 'react-redux'
 import { setNavOpen, setNavItem } from '../redux'
-
 import { FaBars, FaTimes } from 'react-icons/fa'
-
 import logo from '../assets/images/logo-rosa.png'
 import style from './nav.module.scss'
 

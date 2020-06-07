@@ -2,24 +2,30 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { setImages } from '../redux'
-import { useDispatch } from 'react-redux'
-//import Responsive from '../graphql/responsive-fragment'
+import { setImages, setSite } from '../redux'
+import { useDispatch, useSelector } from 'react-redux'
 import SectionFactory from '../components/factories/section-factory'
 
-export default ({ data }) => {
+export default props => {
+  const site = useSelector(state => state.site)
+  const images = useSelector(state => state.image.images)
+
   // Save all images into Redux store cause Gatsby can't dynamically load images
   const dispatch = useDispatch()
-  const images = new Map(
-    data.allFile.nodes.map(node => [
+  const lib = new Map(
+    props.data.allFile.nodes.map(node => [
       node.childImageSharp.fluid.originalName,
       node.childImageSharp.fluid,
     ])
   )
-  dispatch(setImages(images))
+  if (images === null) dispatch(setImages(lib))
+  if (site === null) {
+    console.log('situs2', site)
+    dispatch(setSite(props.pageContext.site))
+  }
 
   // Build dynamically each page - building it's section
-  const page = data.page
+  const page = props.pageContext.page
   return (
     <Layout>
       <SEO title={page.title} description={page.description} />
@@ -31,46 +37,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
-    page: thirdPartyPages(slug: { eq: $slug }) {
-      slug
-      description
-      title
-      sections {
-        type
-        params {
-          title
-          subtitle
-          image
-          overlay
-        }
-        rows {
-          blocks {
-            classes
-            type
-            responsive {
-              sm
-              md
-              lg
-              xl
-            }
-            params {
-              title
-              subtitle
-              buttonText
-              images
-              display
-            }
-            animation {
-              type
-              delay
-              left
-              right
-            }
-          }
-        }
-      }
-    }
+  query {
     allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {
       nodes {
         relativePath

@@ -1,7 +1,7 @@
 import { SET_IMAGES } from './imageTypes'
 
 const initialState = {
-  images: [],
+  images: null,
 }
 
 const imageReducer = (state = initialState, action) => {

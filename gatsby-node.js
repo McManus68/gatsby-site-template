@@ -1,23 +1,20 @@
 var path = require('path')
+var axios = require('axios')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
-    query {
-      pages: allThirdPartyPages(filter: { title: { ne: "DUMMY_PAGE" } }) {
-        nodes {
-          slug
-        }
-      }
-    }
-  `)
+  const result = await axios.get(
+    `${process.env.API_URL}/${process.env.SITE_ID}`
+  )
 
-  result.data.pages.nodes.forEach(page => {
+  // Create all pages
+  result.data.pages.forEach(page => {
     createPage({
       path: page.slug,
       component: path.resolve(`./src/templates/page.js`),
       context: {
-        slug: page.slug,
+        page: page,
+        site: result.data,
       },
     })
   })
