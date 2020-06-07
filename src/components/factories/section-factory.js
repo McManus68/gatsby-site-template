@@ -7,12 +7,17 @@ import SectionHeadline from '@bit/mcmanus68.ui-react.section-headline'
 import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
 
 const SectionFactory = ({ section }) => {
+  const params = section.params.reduce((obj, current) => {
+    obj[current.name] = current.value
+    return obj
+  }, {})
+
   switch (section.type) {
     case 'SECTION_HERO':
-      return <SectionHero {...section.params} />
+      return <SectionHero {...params} />
 
     case 'SECTION_HEADLINE':
-      return <SectionHeadline {...section.params} />
+      return <SectionHeadline {...params} />
 
     case 'SECTION_CUSTOM':
       return (

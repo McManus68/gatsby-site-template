@@ -9,18 +9,22 @@ import FooterSocial from '@bit/mcmanus68.ui-react.footer-social'
 import FooterNewsletter from '@bit/mcmanus68.ui-react.footer-newsletter'
 
 const BlockFactory = ({ block }) => {
+  const params = block.params.reduce((obj, current) => {
+    obj[current.name] = current.value
+    return obj
+  }, {})
   var content = (() => {
     switch (block.type) {
       case 'BLOCK_SIMPLE_CONTENT':
-        return <BlockSimpleContent {...block.params} />
+        return <BlockSimpleContent {...params} />
       case 'BLOCK_GALLERY':
-        return <BlockImageGallery {...block.params} />
+        return <BlockImageGallery {...params} />
       case 'FOOTER_SIMPLE_CONTENT':
-        return <FooterSimpleContent {...block.params} />
+        return <FooterSimpleContent {...params} />
       case 'FOOTER_SOCIAL':
-        return <FooterSocial {...block.params} />
+        return <FooterSocial {...params} />
       case 'FOOTER_NEWSLETTER':
-        return <FooterNewsletter {...block.params} />
+        return <FooterNewsletter {...params} />
       default:
         return null
     }
