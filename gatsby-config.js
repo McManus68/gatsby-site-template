@@ -17,7 +17,7 @@ module.exports = {
       options: {
         name: `images`,
         path: `${process.env.IMAGES_PATH}/${process.env.SITE_ID}`,
-        ignore: `${process.env.IMAGES_PATH}/${process.env.SITE_ID}/thumbnail/*`,
+        ignore: [`**/thumbnail*`],
       },
     },
     `gatsby-transformer-sharp`,
@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#0e141f`,
         theme_color: `#0e141f`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `${process.env.IMAGES_PATH}/${process.env.SITE_ID}/logo.png`,
       },
     },
     `gatsby-plugin-offline`,
