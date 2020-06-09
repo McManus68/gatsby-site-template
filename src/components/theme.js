@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { LightenDarkenColor } from '../utils/color-utils'
+import { GlobalStyle } from '../styles/global-styles'
 import { useSelector } from 'react-redux'
 
 const Theme = ({ children }) => {
@@ -45,7 +46,12 @@ const Theme = ({ children }) => {
     },
   }
 
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      {children}
+    </ThemeProvider>
+  )
 }
 
 export default Theme

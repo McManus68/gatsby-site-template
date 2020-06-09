@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { GlobalStyle } from '../styles/global-styles'
 import PropTypes from 'prop-types'
 import Header from './header'
 import Footer from './footer'
@@ -12,7 +11,6 @@ const Layout = ({ children }) => {
 
   return (
     <Theme>
-      <GlobalStyle />
       <Header site={site} />
       <main>{children}</main>
       <Footer footer={site.footer} />
