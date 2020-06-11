@@ -13,11 +13,12 @@ export default props => {
     site = props.pageContext.site
   }
 
+  console.log('props.pageContext.name', props.pageContext.title)
   // Build dynamically each page - building it's section
-  const page = site.pages.find(page => page.name === props.pageContext.name)
+  const page = site.pages.find(page => page.title === props.pageContext.title)
   return (
     <Layout>
-      <SEO title={page.title} description={page.description} />
+      {/*<SEO title={page.title} description={page.description} />*/}
       {page.sections.map((section, i) => (
         <SectionFactory key={i} section={section} />
       ))}

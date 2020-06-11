@@ -30,7 +30,7 @@ const BlockFactory = ({ block }) => {
     }
   })()
 
-  if (block.animation && block.animation.type !== '') {
+  if (block.animation && block.animation.type !== 'NONE') {
     content = (
       <AnimationFactory animation={block.animation}>{content}</AnimationFactory>
     )
