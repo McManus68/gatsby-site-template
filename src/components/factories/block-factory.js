@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Col } from 'react-bootstrap'
+import { reduceParams } from '../../utils/params-utils'
 import BlockImageGallery from '@bit/mcmanus68.ui-react.block-image-gallery'
 import BlockSimpleContent from '@bit/mcmanus68.ui-react.block-simple-content'
 import AnimationFactory from './animation-factory'
@@ -9,10 +10,7 @@ import FooterSocial from '@bit/mcmanus68.ui-react.footer-social'
 import FooterNewsletter from '@bit/mcmanus68.ui-react.footer-newsletter'
 
 const BlockFactory = ({ block }) => {
-  const params = block.params.reduce((obj, current) => {
-    obj[current.name] = current.value
-    return obj
-  }, {})
+  const params = reduceParams(block.params)
   var content = (() => {
     switch (block.type) {
       case 'BLOCK_SIMPLE_CONTENT':

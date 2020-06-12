@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import Bounce from 'react-reveal/Fade'
 import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'

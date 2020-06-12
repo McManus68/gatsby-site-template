@@ -1,17 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Container } from 'react-bootstrap'
+import { reduceParams } from '../../utils/params-utils'
 import RowFactory from './row-factory'
 import Section from '@bit/mcmanus68.ui-react.section'
 import SectionHeadline from '@bit/mcmanus68.ui-react.section-headline'
 import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
 
 const SectionFactory = ({ section }) => {
-  const params = section.params.reduce((obj, current) => {
-    obj[current.name] = current.value
-    return obj
-  }, {})
-
+  const params = reduceParams(section.params)
   switch (section.type) {
     case 'SECTION_HERO':
       return <SectionHero {...params} />
