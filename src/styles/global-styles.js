@@ -16,6 +16,9 @@ export const GlobalStyle = createGlobalStyle`
       background-color: ${props => props.theme.color.bg};
       overflow-x: hidden;
     }
+    a {
+      text-decoration: none;
+    }
     p {
      font-size: 1rem;
      line-height: 2rem;

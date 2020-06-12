@@ -3,7 +3,7 @@ var axios = require('axios')
 var siteUtils = require('./src/utils/site-utils')
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
+  const { createPage } = actions
 
   // Fetch site data
   const result = await axios.get(

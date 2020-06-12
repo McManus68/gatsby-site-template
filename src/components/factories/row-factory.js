@@ -5,9 +5,9 @@ import BlockFactory from './block-factory'
 
 const RowFactory = ({ row }) => (
   <Row>
-    {row.blocks.map((block, i) => {
-      return <BlockFactory key={i} block={block} />
-    })}
+    {row.blocks.map((block, i) => (
+      <BlockFactory key={i} block={block} />
+    ))}
   </Row>
 )
 
