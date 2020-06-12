@@ -36,19 +36,12 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create all pages
   site.pages.forEach(page => {
     createPage({
-      path: page.slug,
+      path: page.main ? '/' : page.slug,
       component: path.resolve(`./src/templates/page.js`),
       context: {
         title: page.title,
         site: site,
       },
     })
-  })
-
-  createRedirect({
-    fromPath: `/`,
-    toPath: `/home`,
-    redirectInBrowser: true,
-    isPermanent: true,
   })
 }

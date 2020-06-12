@@ -14,6 +14,7 @@ module.exports = {
       }
     }
 
+    site.logo = getImage(site.logo)
     site.pages.forEach(page =>
       page.sections.forEach(section => {
         section.params.forEach(param => {
