@@ -3,15 +3,16 @@ import { useSelector } from 'react-redux'
 import PropTypes from 'prop-types'
 import Header from './header'
 import Footer from './footer'
+import Theme from './theme'
 
 const Layout = ({ children }) => {
   const site = useSelector(state => state.site)
   return (
-    <>
+    <Theme>
       <Header site={site} />
       <main>{children}</main>
       <Footer footer={site.footer} />
-    </>
+    </Theme>
   )
 }
 
