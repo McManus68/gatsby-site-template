@@ -16,12 +16,17 @@
     "@bit/mcmanus68.ui-react.headline": "^1.0.16",
     "@bit/mcmanus68.ui-react.headline-separator": "^1.0.10",
     "@bit/mcmanus68.ui-react.link-text": "^1.0.13",
-    "@bit/mcmanus68.ui-react.nav-default": "^1.0.4",
+    "@bit/mcmanus68.ui-react.nav-default": "^1.0.6",
     "@bit/mcmanus68.ui-react.section": "^1.0.2",
     "@bit/mcmanus68.ui-react.section-headline": "^1.0.20",
     "@bit/mcmanus68.ui-react.section-hero": "^1.0.39",
     "@bit/mcmanus68.ui-react.section-parallax": "^1.0.7",
     "@bit/mcmanus68.ui-react.styles": "^1.0.0",
+    "@types/react": "^16.9.36",
+    "@types/react-bootstrap": "^1.0.1",
+    "@types/react-helmet": "^6.0.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/styled-components": "^5.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.3",
@@ -41,7 +46,7 @@
     "lodash.get": "^4.4.2",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
+    "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
@@ -56,7 +61,11 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "prettier": "2.0.5",
+    "typescript": "^3.9.5"
   },
   "keywords": [
     "gatsby"
