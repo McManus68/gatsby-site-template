@@ -2,11 +2,10 @@
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "build"],
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "esnext",
     "lib": ["dom", "es2017"],
-    // "allowJs": true,
-    // "checkJs": true,
+    "moduleResolution": "node",
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,

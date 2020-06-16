@@ -1,11 +1,12 @@
 import React from 'react'
+import { RootState } from '../redux/rootReducer'
 import Layout from '../components/layout'
-import { setSite } from '../redux'
+import { setSite } from '../redux/index'
 import { useDispatch, useSelector } from 'react-redux'
 import PageFactory from '../components/factories/page-factory'
 
-export default props => {
-  var site = useSelector(state => state.site)
+export default (props: { pageContext: { site: any; title: any } }) => {
+  var site = useSelector((state: RootState) => state.site)
   const dispatch = useDispatch()
   if (site === null) {
     dispatch(setSite(props.pageContext.site))

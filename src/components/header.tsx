@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Site } from '../types/types'
-import NavFactory from './factories/nav-factory'
+import HeaderFactory from './factories/header-factory'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
@@ -20,7 +20,7 @@ interface Props {
 const Header: React.FC<Props> = ({ site }) => (
   <StyledHeader>
     <Container>
-      <NavFactory site={site} />
+      <HeaderFactory site={site} />
     </Container>
   </StyledHeader>
 )

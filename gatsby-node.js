@@ -37,7 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
   site.pages.forEach(page => {
     createPage({
       path: page.main ? '/' : page.slug,
-      component: path.resolve(`./src/templates/page.js`),
+      component: path.resolve(`./src/templates/page.tsx`),
       context: {
         title: page.title,
         site: site,

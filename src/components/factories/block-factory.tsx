@@ -1,13 +1,13 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import { Block, BlockType, AnimationType } from '../../types/types'
+import { Block, BlockType, AnimationType } from '@bit/mcmanus68.webmaker.model.types'
 import { reduceParams } from '../../utils/params-utils'
-import BlockImageGallery from '@bit/mcmanus68.ui-react.block-image-gallery'
-import BlockSimpleContent from '@bit/mcmanus68.ui-react.block-simple-content'
+import BlockImageGallery from '@bit/mcmanus68.webmaker.block.block-image-gallery'
+import BlockSimpleContent from '@bit/mcmanus68.webmaker.block.block-simple-content'
 import AnimationFactory from './animation-factory'
-import FooterSimpleContent from '@bit/mcmanus68.ui-react.footer-simple-content'
-import FooterSocial from '@bit/mcmanus68.ui-react.footer-social'
-import FooterNewsletter from '@bit/mcmanus68.ui-react.footer-newsletter'
+import FooterSimpleContent from '@bit/mcmanus68.webmaker.footer.footer-simple-content'
+import FooterSocial from '@bit/mcmanus68.webmaker.footer.footer-social'
+import FooterNewsletter from '@bit/mcmanus68.webmaker.footer.footer-newsletter'
 
 interface Props {
   block: Block
@@ -33,9 +33,7 @@ const BlockFactory: React.FC<Props> = ({ block }) => {
   })()
 
   if (block.animation.type !== AnimationType.None) {
-    content = (
-      <AnimationFactory animation={block.animation}>{content}</AnimationFactory>
-    )
+    content = <AnimationFactory animation={block.animation}>{content}</AnimationFactory>
   }
   return (
     <Col className={`${block.classes} my-auto`} {...block.responsive}>

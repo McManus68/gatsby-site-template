@@ -1,19 +1,18 @@
-import { SET_NAV_OPEN, SET_NAV_ITEM } from './uiTypes'
+import { UiType, UiAction, UiState } from './uiTypes'
 
-const initialState = {
+const initialState: UiState = {
   isNavOpen: false,
-  navItem: 'Home',
+  navItem: '',
 }
 
-const uiReducer = (state = initialState, action) => {
+export default function (state = initialState, action: UiAction) {
   switch (action.type) {
-    case SET_NAV_OPEN:
+    case UiType.SET_NAV_OPEN:
       return {
         ...state,
         isNavOpen: action.payload,
       }
-
-    case SET_NAV_ITEM:
+    case UiType.SET_NAV_ITEM:
       return {
         ...state,
         navItem: action.payload,
@@ -22,5 +21,3 @@ const uiReducer = (state = initialState, action) => {
       return state
   }
 }
-
-export default uiReducer

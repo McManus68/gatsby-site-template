@@ -1,11 +1,11 @@
 import React from 'react'
-import { Section, Row, SectionType } from '../../types/types'
+import { Section, Row, SectionType } from '@bit/mcmanus68.webmaker.model.types'
 import { Container } from 'react-bootstrap'
 import { reduceParams } from '../../utils/params-utils'
 import RowFactory from './row-factory'
-import { default as SectionCustom } from '@bit/mcmanus68.ui-react.section'
-import SectionHeadline from '@bit/mcmanus68.ui-react.section-headline'
-import SectionHero from '@bit/mcmanus68.ui-react.section-hero'
+import SectionCustom from '@bit/mcmanus68.webmaker.section.section-custom'
+import SectionHeadline from '@bit/mcmanus68.webmaker.section.section-headline'
+import SectionHero from '@bit/mcmanus68.webmaker.section.section-hero'
 
 interface Props {
   section: Section

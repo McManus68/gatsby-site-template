@@ -1,5 +1,5 @@
 import React from 'react'
-import { Animation, AnimationType } from '../../types/types'
+import { Animation, AnimationType } from '@bit/mcmanus68.webmaker.model.types'
 import Bounce from 'react-reveal/Bounce'
 import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'
