@@ -1,5 +1,5 @@
 import { SiteType, SiteAction } from './siteTypes'
-import { Site } from '../../types/types'
+import { Site } from '@bit/mcmanus68.webmaker.types.types'
 
 export function setSite(site: Site): SiteAction {
   return {

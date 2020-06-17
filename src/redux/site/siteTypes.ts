@@ -1,4 +1,4 @@
-import { Site } from '../../types/types'
+import { Site } from '@bit/mcmanus68.webmaker.types.types'
 
 export enum SiteType {
   SET_SITE = 'SET_SITE',

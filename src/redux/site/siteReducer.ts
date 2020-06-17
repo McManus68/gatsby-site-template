@@ -1,5 +1,5 @@
 import { SiteType, SiteAction } from './siteTypes'
-import { Site } from '../../types/types'
+import { Site } from '@bit/mcmanus68.webmaker.types.types'
 
 const initialState: Site | null = null
 
