@@ -1,5 +1,5 @@
 import React from 'react'
-import { Site } from '../types/types'
+import { Site } from '@bit/mcmanus68.webmaker.types.types'
 import { Helmet } from 'react-helmet'
 
 interface Props {

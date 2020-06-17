@@ -3,7 +3,8 @@ import { RootState } from '../redux/rootReducer'
 import Layout from '../components/layout'
 import { setSite } from '../redux/index'
 import { useDispatch, useSelector } from 'react-redux'
-import PageFactory from '../components/factories/page-factory'
+import FactoryPage from '@bit/mcmanus68.webmaker.factory.factory-page'
+import SEO from '../components/seo'
 
 export default (props: { pageContext: { site: any; title: any } }) => {
   var site = useSelector((state: RootState) => state.site)
@@ -17,7 +18,8 @@ export default (props: { pageContext: { site: any; title: any } }) => {
   const page = site.pages.find(page => page.title === props.pageContext.title)
   return (
     <Layout>
-      <PageFactory page={page} />
+      {/*<SEO title={page.title} description={page.description} />*/}
+      <FactoryPage page={page} />
     </Layout>
   )
 }
