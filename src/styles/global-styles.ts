@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
+import { Theme } from '@bit/mcmanus68.webmaker.types.types'
+import 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+declare module 'styled-components' {
+  export interface DefaultTheme extends Theme {}
+}
+
+export const GlobalStyle = createGlobalStyle<Theme>`
     * {
     margin: 0;
     padding: 0;
@@ -13,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
       scroll-behavior: smooth;
     }
     body {
-      background-color: ${props => props.theme.color.bg};
+      background-color: ${props => props.theme.color.bg}; 
       overflow-x: hidden;
     }
     a {
@@ -26,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     .container {
       max-width: 1140px !important;
     }
-    @media (max-width: ${props => props.theme.breakpoint.sm}) {
+    @media (max-width: ${props => props.theme.breakpoint.sm}) { 
       html {
         font-size: 10px;
       }
