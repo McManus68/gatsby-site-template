@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderClassic from '@bit/mcmanus68.webmaker.header.header-classic'
-import { Site, HeaderType } from '@bit/mcmanus68.webmaker.model.types'
+import { Site, HeaderType } from '@bit/mcmanus68.webmaker.types.types'
 
 interface Props {
   site: Site

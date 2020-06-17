@@ -1,5 +1,5 @@
-import React from 'react'
-import { Section, Row, SectionType } from '@bit/mcmanus68.webmaker.model.types'
+import React, { ReactNode } from 'react'
+import { Section, Row, SectionType } from '@bit/mcmanus68.webmaker.types.types'
 import { Container } from 'react-bootstrap'
 import { reduceParams } from '../../utils/params-utils'
 import RowFactory from './row-factory'
@@ -9,9 +9,10 @@ import SectionHero from '@bit/mcmanus68.webmaker.section.section-hero'
 
 interface Props {
   section: Section
+  recursive: boolean
 }
 
-const SectionFactory: React.FC<Props> = ({ section }) => {
+const SectionFactory: React.FC<Props> = ({ section, recursive, children }) => {
   const params = reduceParams(section.params)
   switch (section.type) {
     case SectionType.SectionHero:
@@ -22,9 +23,9 @@ const SectionFactory: React.FC<Props> = ({ section }) => {
       return (
         <SectionCustom>
           <Container>
-            {section.rows.map((row: Row, i: number) => (
-              <RowFactory key={i} row={row} />
-            ))}
+            {recursive
+              ? section.rows.map((row: Row, i: number) => <RowFactory key={i} row={row} />)
+              : children}
           </Container>
         </SectionCustom>
       )

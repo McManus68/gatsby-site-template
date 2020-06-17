@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { Footer } from '@bit/mcmanus68.webmaker.model.types'
+import { Footer } from '@bit/mcmanus68.webmaker.types.types'
 import BackToTop from '@bit/mcmanus68.webmaker.ui.back-to-top'
 import RowFactory from './factories/row-factory'
 import styled from 'styled-components'

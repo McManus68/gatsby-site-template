@@ -5,11 +5,11 @@ import Header from './header'
 import Footer from './footer'
 import Theme from './theme'
 
-interface IProps {
+interface Props {
   children: React.ReactNode
 }
 
-const Layout: React.FC<IProps> = ({ children }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   const site = useSelector((state: RootState) => state.site)
   return (
     <Theme>

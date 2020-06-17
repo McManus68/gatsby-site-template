@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { Site } from '../types/types'
+import { Site } from '@bit/mcmanus68.webmaker.types.types'
 import HeaderFactory from './factories/header-factory'
 import styled from 'styled-components'
 
