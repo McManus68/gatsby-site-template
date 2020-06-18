@@ -6,9 +6,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   // Fetch site data
-  const result = await axios.get(
-    `${process.env.API_URL}/${process.env.SITE_ID}`
-  )
+  const result = await axios.get(`${process.env.API_URL}/${process.env.SITE_ID}`)
 
   // Fetch all images stored into GraphQL schema
   const images = await graphql(`
@@ -37,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
   site.pages.forEach(page => {
     createPage({
       path: page.main ? '/' : page.slug,
-      component: path.resolve(`./src/templates/page.tsx`),
+      component: path.resolve(`./src/templates/page.js`),
       context: {
         title: page.title,
         site: site,

@@ -1,12 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-import { Theme } from '@bit/mcmanus68.webmaker.types.types'
 import 'styled-components'
+import '../styles/main.scss'
 
-declare module 'styled-components' {
-  export interface DefaultTheme extends Theme {}
-}
-
-export const GlobalStyle = createGlobalStyle<Theme>`
+export const GlobalStyle = createGlobalStyle`
     * {
     margin: 0;
     padding: 0;

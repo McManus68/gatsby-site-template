@@ -5,11 +5,10 @@
   "version": "0.1.0",
   "author": "Emmanuel Tarrou <emmanuel.tarrou34@gmail.com>",
   "dependencies": {
-    "@bit/mcmanus68.webmaker.factory.factory-footer": "^1.0.10",
-    "@bit/mcmanus68.webmaker.factory.factory-header": "^1.0.5",
-    "@bit/mcmanus68.webmaker.factory.factory-page": "^1.0.13",
-    "@bit/mcmanus68.webmaker.factory.factory-theme": "^1.0.3",
-    "@bit/mcmanus68.webmaker.types.types": "^1.0.2",
+    "@bit/mcmanus68.webmaker.factory.factory-footer": "^1.0.23",
+    "@bit/mcmanus68.webmaker.factory.factory-header": "^1.0.9",
+    "@bit/mcmanus68.webmaker.factory.factory-page": "^1.0.26",
+    "@bit/mcmanus68.webmaker.factory.factory-theme": "^1.0.5",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.4",
     "gatsby-image": "^2.4.7",
@@ -23,6 +22,7 @@
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
@@ -35,16 +35,7 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.13",
-    "@types/react": "^16.9.38",
-    "@types/react-bootstrap": "^1.0.1",
-    "@types/react-dom": "^16.9.8",
-    "@types/react-helmet": "^6.0.0",
-    "@types/react-redux": "^7.1.9",
-    "@types/redux-logger": "^3.0.8",
-    "@types/styled-components": "^5.1.0",
-    "prettier": "2.0.5",
-    "typescript": "^3.9.5"
+    "prettier": "2.0.5"
   },
   "keywords": [
     "gatsby"
