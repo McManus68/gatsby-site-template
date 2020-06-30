@@ -21,10 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     a {
       text-decoration: none;
     }
-    p {
-     font-size: 1rem;
-     line-height: 2rem;
-    }
     .container {
       max-width: 1140px !important;
     }
